@@ -1,1 +1,92 @@
+body {
+    background-color: #eaf0ea; /* Un tono de verde */
+  }
+
+  .navbar-custom {
+    background-color: #20c043;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f3130; /* Verde más oscuro para el footer */
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 999; /* Asegura que el footer esté por encima del contenido */
+}
+
+
+  
+  .container-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .menu-footer > div {
+    flex: 1;
+  }
+  .title-footer {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .contact-info ul, .information ul, .my-account ul {
+    list-style: none;
+    padding: 0;
+  }
+  .social-icons {
+    margin-top: 10px;
+  }
+  .social-icons span {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  /* Estilos predeterminados para todos los tamaños de pantalla */
+.container-hero {
+    background-color: #0ce43b;
+    padding: 0 0 1px; /* Ajusta el valor inferior según sea necesario */
+    text-align: center;
+    height: 25px; /* Ajusta la altura según tus necesidades */
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 17px; /* Ajusta el tamaño del texto según sea necesario */
+    color: white;
+    margin: 0;
+}
+
+  .newsletter button {
+    background-color: #25d366; /* Color de WhatsApp */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .newsletter button:hover {
+    background-color: #000000; /* Color de WhatsApp más oscuro al pasar el mouse */
+  }
+  .newsletter a {
+    text-decoration: none;
+  }
+
+  .information a {
+text-decoration: none;
+color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro */
+}
+
+/* Estilo para el icono flotante */
+.floating-icon {
+    position: fixed;
+    bottom: 35px;
+    right: 2cqmax;
+    z-index: 1000; /* Asegura que el icono flotante esté por encima del contenido */
+}
 
