@@ -1,92 +1,193 @@
 body {
-    background-color: #eaf0ea; /* Un tono de verde */
-  }
+  background-color: #eaf0ea; /* Un tono de verde */
+}
 
-  .navbar-custom {
-    background-color: #20c043;
+.navbar-custom {
+  background-color: #20c043;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #2f3130; /* Verde más oscuro para el footer */
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 999; /* Asegura que el footer esté por encima del contenido */
+  
+  
+  bottom: 0;
+  width: 100%;
+  background-color: #2f3130; /* Verde más oscuro para el footer */
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 999; /* Asegura que el footer esté por encima del contenido */
 }
 
 
-  
-  .container-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .menu-footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .menu-footer > div {
-    flex: 1;
-  }
-  .title-footer {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .contact-info ul, .information ul, .my-account ul {
-    list-style: none;
-    padding: 0;
-  }
-  .social-icons {
-    margin-top: 10px;
-  }
-  .social-icons span {
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  /* Estilos predeterminados para todos los tamaños de pantalla */
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.menu-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.menu-footer > div {
+  flex: 1;
+}
+.title-footer {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-info ul, .information ul, .my-account ul {
+  list-style: none;
+  padding: 0;
+}
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* Estilos predeterminados para todos los tamaños de pantalla */
 .container-hero {
-    background-color: #0ce43b;
-    padding: 0 0 1px; /* Ajusta el valor inferior según sea necesario */
-    text-align: center;
-    height: 25px; /* Ajusta la altura según tus necesidades */
+  background-color: #0ce43b;
+  padding: 0 0 1px; /* Ajusta el valor inferior según sea necesario */
+  text-align: center;
+  height: 25px; /* Ajusta la altura según tus necesidades */
 }
 
 .hero-text {
-    text-align: center;
-    font-size: 17px; /* Ajusta el tamaño del texto según sea necesario */
-    color: white;
-    margin: 0;
+  text-align: center;
+  font-size: 17px; /* Ajusta el tamaño del texto según sea necesario */
+  color: white;
+  margin: 0;
 }
 
-  .newsletter button {
-    background-color: #25d366; /* Color de WhatsApp */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .newsletter button:hover {
-    background-color: #000000; /* Color de WhatsApp más oscuro al pasar el mouse */
-  }
-  .newsletter a {
-    text-decoration: none;
-  }
+.newsletter button {
+  background-color: #25d366; /* Color de WhatsApp */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #000000; /* Color de WhatsApp más oscuro al pasar el mouse */
+}
+.newsletter a {
+  text-decoration: none;
+}
 
-  .information a {
+.information a {
 text-decoration: none;
 color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro */
 }
 
 /* Estilo para el icono flotante */
 .floating-icon {
-    position: fixed;
-    bottom: 35px;
-    right: 2cqmax;
-    z-index: 1000; /* Asegura que el icono flotante esté por encima del contenido */
+  position: fixed;
+  bottom: 35px;
+  right: 2cqmax;
+  z-index: 1000; /* Asegura que el icono flotante esté por encima del contenido */
 }
+
+/* Estilos personalizados */
+.categoria-btn {
+  border-radius: 10px; /* Borde redondeado */
+  margin-bottom: 10px; /* Espaciado inferior */
+  transition: background-color 0.3s; /* Animación de cambio de color */
+}
+
+.categoria-btn:hover {
+  background-color: #8CD790; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el saludo dinámico */
+.saludo-container {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.saludo-container.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para el código QR */
+.qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.qr-code-container.active {
+  opacity: 1;
+}
+
+ /* Estilos personalizados */
+ .categoria-btn {
+  border-radius: 10px; /* Borde redondeado */
+  margin-bottom: 10px; /* Espaciado inferior */
+  transition: background-color 0.3s; /* Animación de cambio de color */
+}
+
+.categoria-btn:hover {
+  background-color: #8CD790; /* Cambio de color al pasar el mouse */
+}
+
+ /* Estilos personalizados */
+ #carouselExampleIndicators {
+  margin-bottom: 50px; /* Espacio entre el slider y el contenido */
+}
+
+/* Estilo para el color verde medicinal */
+.btn-verde-medicinal {
+  background-color: #00A572; /* Cambia este valor al color verde medicinal que prefieras */
+  border-color: #00A572; /* Puedes ajustar el color del borde si es necesario */
+}
+
+.btn-verde-medicinal:hover {
+  background-color: #007848; /* Cambia este valor al color verde oscuro cuando el botón está en hover */
+  border-color: #007848; /* Puedes ajustar el color del borde si es necesario */
+}
+
+/* Estilos para el mensaje de ayuda */
+.help-message {
+  position: fixed;
+  bottom: 160px; /* Ajusta la posición vertical según sea necesario */
+  right: 20px; /* Ajusta la posición horizontal según sea necesario */
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #007bff; /* Color del icono de usuario */
+}
+
+.message {
+  margin-left: 10px;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
