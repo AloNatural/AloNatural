@@ -90,52 +90,110 @@
    
    
   </div>
+  
+<!-- Productos -->
+<div class="container mt-4" id="Productos" style="display: none;">
+  <h2>Productos</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
+        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+        <div class="card-body">
+          <i class="fas fa-pills fa-3x"></i>
+          <h5 class="card-title">Productos Puritans</h5>
+          <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
+          <a href="#" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
+        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+        <div class="card-body">
+          <i class="fas fa-prescription-bottle-alt fa-3x"></i>
+          <h5 class="card-title">Productos Reibon</h5>
+          <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
+          <a href="#" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
+        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+        <div class="card-body">
+          <i class="fas fa-first-aid fa-3x"></i>
+          <h5 class="card-title">Productos Americanos</h5>
+          <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
+          <a href="#productos-americanos" class="btn btn-verde-medicinal rounded-pill" onclick="mostrarProductosAmericanos()">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="categoria1" style="display: none;">
+    <!-- Contenido de la categoría 1 -->
+  </div>
+  <div id="categoria2" style="display: none;">
+    <!-- Contenido de la categoría 2 -->
+  </div>
+  <div id="categoria3" style="display: none;">
+    <!-- Contenido de la categoría 3 -->
+  </div>
 
-   <!-- Productos -->
-   <div class="container mt-4" id="Productos" style="display: none;">
-    <h2>Productos</h2>
+  <!-- Contenido de los productos americanos -->
+  <div id="productos-americanos" style="display: none;">
     <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card categoria-card" onclick="mostrarCategoria('categoria1')">
-                <div class="card-body">
-                    <i class="fas fa-pills fa-3x"></i>
-                    <h5 class="card-title">Productos Puritans</h5>
-                    <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
-                    <a href="#" class="btn btn-verde-medicinal">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-                </div>
-            </div>
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-danger">
+          <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Producto 1</h5>
+            <p class="card-text">Descripción del producto 1.</p>
+            <a href="#" class="btn btn-verde-medicinal rounded-pill">Comprar</a>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card categoria-card" onclick="mostrarCategoria('categoria2')">
-                <div class="card-body">
-                    <i class="fas fa-prescription-bottle-alt fa-3x"></i>
-                    <h5 class="card-title">Productos Reibon</h5>
-                    <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
-                    <a href="#" class="btn btn-verde-medicinal">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-danger">
+          <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text">Descripción del producto 2.</p>
+            <a href="#" class="btn btn-verde-medicinal rounded-pill">Comprar</a>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card categoria-card" onclick="mostrarCategoria('categoria3')">
-                <div class="card-body">
-                    <i class="fas fa-first-aid fa-3x"></i>
-                    <h5 class="card-title">Productos Americanos</h5>
-                    <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
-                    <a href="#" class="btn btn-verde-medicinal">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-danger">
+          <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Producto 3</h5>
+            <p class="card-text">Descripción del producto 3.</p>
+            <a href="#" class="btn btn-verde-medicinal rounded-pill">Comprar</a>
+          </div>
         </div>
+      </div>
     </div>
-    <div id="categoria1" style="display: none;">
-        <!-- Contenido de la categoría 1 -->
-    </div>
-    <div id="categoria2" style="display: none;">
-        <!-- Contenido de la categoría 2 -->
-    </div>
-    <div id="categoria3" style="display: none;">
-        <!-- Contenido de la categoría 3 -->
-    </div>
+  </div>
 </div>
+
+
+
+<script>
+  function mostrarProductosAmericanos() {
+    // Ocultar el slider
+    document.getElementById('carouselExampleIndicators').style.display = 'none';
+    // Ocultar las tarjetas de las categorías de productos
+    document.querySelectorAll('.categoria-card').forEach(function(card) {
+      card.style.display = 'none';
+    });
+    // Mostrar el contenido de productos americanos
+    document.getElementById('productos-americanos').style.display = 'block';
+    // Desplazar hasta la sección de productos americanos
+    document.getElementById('productos-americanos').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+
 
 
   
