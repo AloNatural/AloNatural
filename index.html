@@ -10,6 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Q6E5NHz8H9+L5Trn0Z8QzFNY5dPpuC3vw4zW+9aivzMSf/DZJopnCKWt6mi1SR87" crossorigin="anonymous">
+
   <style>
     .categoria-card {
       transition: transform 0.3s ease-in-out;
@@ -25,9 +27,22 @@
 </head>
 
 <body>
+
+  <style>
+.new-navbar-icon {
+    /* Estilos para el nuevo ícono */
+    /* Por ejemplo, si estás utilizando una fuente de íconos */
+    font-family: "Font Awesome"; /* o la fuente que estés utilizando */
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: white; /* Color blanco */
+    /* Si estás utilizando una imagen como ícono */
+    /* background-image: url('ruta-a-la-imagen'); */
+}
+
+  </style>
   <!-- Container Hero -->
   <div class="container-hero">
-    <p class="hero-text">¡Bienvenido a Alo Natural!</p> <!-- Modificación del mensaje de saludo -->
+    <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
   </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -36,20 +51,22 @@
         <img src="img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i style="color: white;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
+</button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="#Inicio">
               <i class="fas fa-home"></i> Inicio
             </a>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
-                <i class="fas fa-shopping-bag"></i> Productos
-              </a>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
+              <i class="fas fa-shopping-bag"></i> Productos
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#Servicios">
               <i class="fas fa-concierge-bell"></i> Servicios
@@ -65,6 +82,7 @@
     </div>
   </nav>
 
+
   <!-- Contenido principal -->
   <div class="container mt-4">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -76,7 +94,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/slider 4.png" class="d-block w-100" alt="...">
+          <img style="width: 10px;" src="img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="img/QR.png" class="d-block w-100" alt="...">
@@ -96,77 +114,63 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-     <!-- Galería de imágenes -->
-  <div class="gallery mt-4">
-    <h2>Galería de Imágenes Destacadas</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <img src="img/gallery/image1.jpg" class="img-fluid" alt="Imagen 1">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/gallery/image2.jpg" class="img-fluid" alt="Imagen 2">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/gallery/image3.jpg" class="img-fluid" alt="Imagen 3">
-      </div>
-      <!-- Agrega más imágenes según sea necesario -->
-    </div>
-  </div>
-    <!-- Espacio para el contenido adicional -->
-   
-   
   </div>
   
 <!-- Productos -->
-<div class="container mt-4" id="Productos" style="display: none;">
-  <h2>Categorias de Productos</h2>
+<div class="container mt-4" id="Productos">
+  <h2>Categorías de Productos</h2>
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
-        <img src="img/Puritans icon.png" class="card-img-top" alt="Imagen de Producto">
+        <img src="img/Puritans icon.png" class="card-img-top" alt="Productos Puritans">
         <div class="card-body">
           <h5 class="card-title">Productos Puritans</h5>
-          <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
-          <a href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+          <p class="card-text">Descubre nuestra selección de productos Puritans.</p>
+          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
-        <img src="img/reibot icon.png" class="card-img-top" alt="Imagen de Producto">
+        <img src="img/reibot icon.png" class="card-img-top" alt="Productos Reibot">
         <div class="card-body">
           <h5 class="card-title">Productos Reibot</h5>
-          <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
-          <a href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+          <p class="card-text">Explora nuestros productos Reibon para tu bienestar.</p>
+          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
+
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+        <img src="img/Americanos.png" class="card-img-top" alt="Productos Americanos">
         <div class="card-body">
           <h5 class="card-title">Productos Americanos</h5>
-          <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
-          <a href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill" onclick="mostrarProductosAmericanos()">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+          <p class="card-text">Conoce nuestros productos americanos de calidad.</p>
+          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
+
         </div>
       </div>
     </div>
   </div>
-  <div id="categoria1" style="display: none;">
-    <!-- Contenido de la categoría 1 -->
-  </div>
-  <div id="categoria2" style="display: none;">
-    <!-- Contenido de la categoría 2 -->
-  </div>
-  <div id="categoria3" style="display: none;">
-    <!-- Contenido de la categoría 3 -->
-  </div>
-
-  <!-- Contenido de los productos americanos -->
-  
+  <div class="row">
+    <div class="col-md-4">
+      <div id="categoria1" style="display: none;">
+        <!-- Contenido de la categoría 1 -->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="categoria2" style="display: none;">
+        <!-- Contenido de la categoría 2 -->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="categoria3" style="display: none;">
+        <!-- Contenido de la categoría 3 -->
+      </div>
     </div>
   </div>
+  <!-- Contenido de los productos americanos -->
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
