@@ -7,8 +7,6 @@ body {
 }
 
 .footer {
-  
-  
   bottom: 0;
   width: 100%;
   background-color: #2f3130; /* Verde más oscuro para el footer */
@@ -140,6 +138,8 @@ color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro *
  /* Estilos personalizados */
  #carouselExampleIndicators {
   margin-bottom: 50px; /* Espacio entre el slider y el contenido */
+  margin-top: -20px
+  
 }
 
 /* Estilo para el color verde medicinal */
