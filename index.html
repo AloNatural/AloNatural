@@ -52,7 +52,7 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i style="color: white;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
+      <span><i style="color: white; font-size: 25px;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
 </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -94,13 +94,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img style="width: 10px;" src="img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
+          <img  src="img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/QR.png" class="d-block w-100" alt="...">
+          <img  src="img/QR.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
+          <img  src="img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -115,10 +115,32 @@
       </button>
     </div>
   </div>
+
+	<!-- Productos -->
+  <section class="container blogs" style="background-image: url('/img/Reibot.png'); border-radius: 10px; background-size: cover; background-position: center;">
+    <div class="container-blogs">
+        <h1 style="font-size: 22px; margin-top: 10px; margin-left: 10px;" class="heading-1"> Categoria de Productos</h1><br><br><br>
+
+        <style>
+          .blogs {
+    height: 65px; /* ajusta el valor según tus necesidades */
+    width: 1300px;
+}
+
+
+            .container-blogs {
+                max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+                padding: 10px; /* Ajusta el relleno según tus necesidades */
+                background-color: rgba(255, 255, 255, 0.2); /* Ajusta el color de fondo y la opacidad según tus necesidades */
+                border-radius: 10px;
+            }
+        </style>
+
+    </div>
+</section><br>
   
 <!-- Productos -->
 <div class="container mt-4" id="Productos">
-  <h2>Categorías de Productos</h2>
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
@@ -126,7 +148,7 @@
         <div class="card-body">
           <h5 class="card-title">Productos Puritans</h5>
           <p class="card-text">Descubre nuestra selección de productos Puritans.</p>
-          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
+         <center> <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
         </div>
       </div>
     </div>
@@ -136,7 +158,7 @@
         <div class="card-body">
           <h5 class="card-title">Productos Reibot</h5>
           <p class="card-text">Explora nuestros productos Reibon para tu bienestar.</p>
-          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
+          <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
 
         </div>
       </div>
@@ -147,7 +169,7 @@
         <div class="card-body">
           <h5 class="card-title">Productos Americanos</h5>
           <p class="card-text">Conoce nuestros productos americanos de calidad.</p>
-          <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a>
+         <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center> 
 
         </div>
       </div>
@@ -173,7 +195,7 @@
   <!-- Contenido de los productos americanos -->
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container container-footer">
@@ -189,6 +211,9 @@
             <span><i class="fab fa-facebook-f"></i></span>
             <span><i class="fab fa-whatsapp"></i></span>
             <span><i class="fab fa-instagram"></i></span>
+            <div class="copyright"><br>
+              <p> Alo Natural &copy; 2024</p>
+            </div>
           </div>
         </div>
         <div class="information">
@@ -202,15 +227,34 @@
 
           </ul>
         </div>
+        <div class="information">
+          <p class="title-footer">Información</p>
+          <ul>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Información Delivery</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Contáctanos</a></li><br>
+
+          </ul>
+        </div>
+        <div class="information">
+          <p class="title-footer">Información</p>
+          <ul>
+          
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Información Delivery</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Contáctanos</a></li><br>
+
+          </ul>
+        </div>
       </div>
       
     </div>
 
-    <div class="copyright">
-      <img src="/img/MerazLabs (2).png" alt="MerazLabs Logo" style="width: 150px;">
-    </div>
-    <p> Alo Natural &copy; 2024</p>
-  </div>
+
   </footer>
 
   <!-- Icono de WhatsApp flotante -->
