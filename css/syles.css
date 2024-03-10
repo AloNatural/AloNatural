@@ -92,7 +92,6 @@ color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro *
 .categoria-btn {
   border-radius: 10px; /* Borde redondeado */
   margin-bottom: 10px; /* Espaciado inferior */
-  transition: background-color 0.3s; /* Animación de cambio de color */
 }
 
 .categoria-btn:hover {
@@ -135,12 +134,21 @@ color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro *
   background-color: #8CD790; /* Cambio de color al pasar el mouse */
 }
 
- /* Estilos personalizados */
- #carouselExampleIndicators {
+/* Estilos personalizados */
+#carouselExampleIndicators {
   margin-bottom: 50px; /* Espacio entre el slider y el contenido */
-  margin-top: -20px
-  
+  margin-top: -24px;
 }
+
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  #carouselExampleIndicators {
+    width: 435px;
+    margin-left: -15px; /* Ajusta este valor según sea necesario */
+  }
+}
+
+
 
 /* Estilo para el color verde medicinal */
 .btn-verde-medicinal {
