@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
- 
+
 </head>
 
 <body>
@@ -22,311 +22,335 @@
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
+        <img src="/img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px; margin-top: -5px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i style="color: white; font-size: 25px;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#Inicio">Inicio</a>
+            <a class="nav-link active text-white" aria-current="page" href="#Inicio">
+              <i class="fas fa-home"></i> Inicio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">Productos</a>
+            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
+              <i class="fas fa-shopping-bag"></i> Productos
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Servicios">Servicios</a>
+            <a class="nav-link text-white" href="#Servicios">
+              <i class="fas fa-concierge-bell"></i> Servicios  
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Contacto">Contacto</a>
+            <a class="nav-link text-white" href="#Contacto">
+              <i class="fas fa-envelope"></i> Contactanos
+            </a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-
-  
-  
-<!-- Productos -->
-<div class="container mt-4" id="Productos" style="display: none;">
-  <h2>Productos</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-pills fa-2x"></i>
-          <h5 class="card-title">Productos Puritans</h5>
-          <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
-          <a href="/public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-prescription-bottle-alt fa-3x"></i>
-          <h5 class="card-title">Productos Reibon</h5>
-          <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
-          <a href="#" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-first-aid fa-3x"></i>
-          <h5 class="card-title">Productos Americanos</h5>
-          <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
-          <a href="public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill" onclick="mostrarProductosAmericanos()">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="categoria1" style="display: none;">
-    <!-- Contenido de la categoría 1 -->
-  </div>
-  <div id="categoria2" style="display: none;">
-    <!-- Contenido de la categoría 2 -->
-  </div>
-  <div id="categoria3" style="display: none;">
-    <!-- Contenido de la categoría 3 -->
-  </div>
-
-  <!-- Contenido de los productos americanos -->
-  
-     
-    </div>
-  </div>
-</div>
+  </nav> 
 
 
-<style>
+			<!-- Banner -->
+		<section class="banner">
+			<div class="content-banner">
+                <style>
+      .banner {
+    background-image: url('/img/CATEGORIA\ DE\ PRODUCTOS.png');
+    height: 30rem;
+    background-size: cover;
+    background-position: center 35%; /* Mueve la imagen hacia abajo */
+}
+
+
+
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
+}
+
+.content-banner p {
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-banner a {
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+}
+
+                </style>
+			</div>
+		</section>
+        
  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .col-md-6 {
-    flex: 0 0 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-    margin: 20px;
-  }
-  .col-lg-4 {
-    flex: 0 0 calc(25% - 40px);
-    max-width: calc(25% - 40px);
-  }
-  .card-product {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(247, 246, 246, 0.1);
-    overflow: hidden;
-  }
-  .card-product img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-  }
-  .content-card-product {
-    padding: 20px;
-  }
-  .card-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .card-text {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  .price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #007bff;
-  }
+  <br>
+  <!-- Productos -->
+  <section class="container blogs" style="background-image: url('/img/Reibot.png'); border-radius: 10px; background-size: cover; background-position: center;">
+    <div class="container-blogs">
+      <h1 style="font-size: 22px; margin-top: 5px; margin-left: 10px;" class="heading-1"> Productos Americanos</h1><br><br><br>
 
-  /* Estilos para dispositivos Android */
-  @media only screen and (max-width: 767px) {
-    .col-md-6 {
-      flex: 0 0 calc(10% - 40px);
-      max-width: calc(10% - 40px);
-      margin: 20px;
-    }
-    .col-lg-4 {
-      flex: 0 0 60%;
-      max-width: 200%;
-    }
-  }
-</style>
+      <style>
+        .blogs {
+          height: 55px; /* ajusta el valor según tus necesidades */
+          width: 1296px;
+        } 
 
- <!-- Contenido principal -->
- <div class="container mt-4">
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
    
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-      </div>
-    
-    </div>
-  
-  </div>
-  <!-- Espacio para el contenido adicional -->
- 
- 
-</div>
 
 
-<div class="container">
-  <div class="row">
-    <!-- Producto 1 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Vaginox-Americano.jpeg" class="card-img-top" alt="Vaginox">
-        <div class="content-card-product">
-          <h5 class="card-title">VAGINOX</h5>
-          <p class="card-text">Tratamiento para infecciones vaginales. Alivia la picazón, secreción y ardor. Crema.</p>
-          <p class="card-text price">L.204.00</p>
-        </div>
-      </div>
+        .container-blogs {
+          max-width: 570px; /* Ajusta el ancho máximo según tus necesidades */
+          padding: 10px; /* Ajusta el relleno según tus necesidades */
+          background-color: rgba(255, 255, 255, 0.2); /* Ajusta el color de fondo y la opacidad según tus necesidades */
+          border-radius: 10px;
+        }
+      </style>
+
     </div>
-    <!-- Producto 2 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 3 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Memorix-Americano.jpeg" class="card-img-top" alt="Memorix">
-        <div class="content-card-product">
-          <h5 class="card-title">Memorix</h5>
-          <p class="card-text">Reconstituyente de la memoria y oxigenador cerebral.</p>
-          <p class="card-text price">L.274.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 4 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 5 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 6 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 7 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 8 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </section>
 
 
-<br><br><br><br><br><br>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container container-footer">
-      <div class="menu-footer">
-        <div class="contact-info">
-          <p class="title-footer">Información de Contacto</p>
-          <ul>
-            <li>Dirección: Barrio El Benque 7 calle, entre 7 y 8 calle S.O. San Pedro Sula, Cortés</li>
-            <li>Teléfono: 3226-2944 / 3268-4168 HN</li>
-            <li>Email: alonaturalhn@gmail.com</li>
-          </ul>
-          <div class="social-icons">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-whatsapp"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
+
+  <!-- Productos -->
+  <div class="container mt-4" id="Productos" style="display: none;">
+    <h2>Productos</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
+          <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+          <div class="card-body">
+            <i class="fas fa-pills fa-2x"></i>
+            <h5 class="card-title">Productos Puritans</h5>
+            <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
+            <a href="/public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
           </div>
         </div>
-        <div class="information">
-          <p class="title-footer">Información</p>
-          <ul>
-            <li><a href="#">Acerca de Nosotros</a></li>
-            <li><a href="#">Información Delivery</a></li>
-            <li><a href="#">Políticas de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Contáctanos</a></li><br>
-          </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
+          <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+          <div class="card-body">
+            <i class="fas fa-prescription-bottle-alt fa-3x"></i>
+            <h5 class="card-title">Productos Reibon</h5>
+            <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
+            <a href="#" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+          </div>
         </div>
       </div>
-      <div class="copyright">
-        <img src="/img/MerazLabs (2).png" alt="MerazLabs Logo" style="width: 150px;">
+      <div class="col-md-4 mb-4">
+        <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
+          <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
+          <div class="card-body">
+            <i class="fas fa-first-aid fa-3x"></i>
+            <h5 class="card-title">Productos Americanos</h5>
+            <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
+            <a href="public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill" onclick="mostrarProductosAmericanos()">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
+          </div>
+        </div>
       </div>
-      <p>Alo Natural &copy; 2024</p>
     </div>
-  </footer>
+    <div id="categoria1" style="display: none;">
+      <!-- Contenido de la categoría 1 -->
+    </div>
+    <div id="categoria2" style="display: none;">
+      <!-- Contenido de la categoría 2 -->
+    </div>
+    <div id="categoria3" style="display: none;">
+      <!-- Contenido de la categoría 3 -->
+    </div>
+
+    <!-- Contenido de los productos americanos -->
+
+
+  </div>
+
+
+  <style>
+    /* Estilos para los cards */
+    .card-product {
+        width: 60%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(247, 246, 246, 0.1);
+        overflow: hidden;
+        height: 390px; /* Altura fija para todos los cards */
+    }
+    .card-product img {
+        width: 100%;
+        height: 250px; /* Altura fija para la imagen */
+        object-fit: cover;
+        border-bottom: 2px solid #ddd;
+    }
+    .content-card-product {
+        padding: 20px;
+        height: calc(100% - 200px); /* Resta la altura de la imagen */
+        overflow: hidden;
+    }
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .card-text {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    .price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+    }
+    /* Estilos para dispositivos Android */
+    @media only screen and (max-width: 767px) {
+        .col-md-6 {
+            flex: 0 0 calc(50% - 40px);
+            max-width: calc(50% - 40px);
+            margin: 20px;
+        }
+        .col-lg-4 {
+            flex: 0 0 calc(50% - 40px);
+            max-width: calc(50% - 40px);
+            margin: 20px;
+        }
+    }
+</style>
+
+
+
+   <!-- Filtro y Buscador -->
+   <div class="container mt-4">
+    <div class="row justify-content-end">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar productos" aria-label="Buscar productos" aria-describedby="button-addon2">
+                <button class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Aquí puedes agregar el formulario de filtros -->
+            <form id="filterForm">
+                <div class="input-group">
+                    <input type="number" id="minPrice" class="form-control" placeholder="Precio mínimo" aria-label="Precio mínimo">
+                    <input type="number" id="maxPrice" class="form-control" placeholder="Precio máximo" aria-label="Precio máximo">
+                    <button class="btn btn-outline-primary" type="submit">Aplicar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  <!-- Contenedor de productos -->
+  <div class="container">
+    <div class="row" id="productContainer">
+        <!-- Aquí se cargarán dinámicamente los productos -->
+    </div>
+</div>
+
+<script>
+  // Datos de ejemplo para los productos
+  const products = [
+      { name: "VAGINOX", description: "Tratamiento para infecciones vaginales.", price: 204.00, imageUrl: "/imgAmericanos/Vaginox-Americano.jpeg" },
+      { name: "Super Magnesio 60 Cápsulas", description: "Suplemento para el sistema óseo.", price: 181.00, imageUrl: "/imgAmericanos/Super Magnesio-Americano.jpeg" },
+      { name: "H-pylorix Forte", description: "EFICAZ PARA LA IRRADIACION TOTAL DE LA BACTERIA HELICOBACTER PILORI, ACIDEZ, REFLUJO, DIARREA, ARDOR GASTRICO ETC.", price: 350.00, imageUrl: "/imgAmericanos/H-pylorix forte-Americano.jpeg" },
+      { name: "F12 Antianemico Jarabe 240ml", description: "FORTALECE EL SISTEMA INMUNOLOGICO Y SANGUINEO AUMENTANDO LA FORMACION DE GLOBULOS ROJOS ESTIMULANDO LA MEDULA OSEA.", price: 174.00, imageUrl: "/imgAmericanos/F12 Antianemico Jarabe.jpeg" },
+
+  ];
+
+  // Función para mostrar los productos
+  function displayProducts(products) {
+      const container = document.getElementById("productContainer");
+      container.innerHTML = "";
+      products.forEach(product => {
+          const card = `
+          <div class="col-md-6 col-lg-4">
+              <div class="card card-product">
+                  <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
+                  <div class="content-card-product">
+                      <h5 class="card-title">${product.name}</h5>
+                      <p class="card-text">${product.description}</p>
+                      <p class="card-text price">L.${product.price.toFixed(2)}</p>
+                  </div>
+              </div>
+          </div>`;
+          container.innerHTML += card;
+      });
+  }
+
+  // Función para filtrar productos por nombre
+  function filterProducts(searchTerm) {
+      const filteredProducts = products.filter(product =>
+          product.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      displayProducts(filteredProducts);
+  }
+
+  // Función para filtrar productos por precio
+  function filterByPrice(minPrice, maxPrice) {
+      const filteredProducts = products.filter(product =>
+          product.price >= minPrice && product.price <= maxPrice
+      );
+      displayProducts(filteredProducts);
+  }
+
+  // Mostrar todos los productos al cargar la página
+  displayProducts(products);
+
+  // Evento de búsqueda al escribir en el campo de búsqueda
+  document.getElementById("searchInput").addEventListener("input", function() {
+      filterProducts(this.value);
+  });
+
+  // Evento de envío del formulario de filtros
+  document.getElementById("filterForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const minPrice = parseFloat(document.getElementById("minPrice").value);
+      const maxPrice = parseFloat(document.getElementById("maxPrice").value);
+      filterByPrice(minPrice, maxPrice);
+  });
+</script>
+
+
+
+  <br><br><br><br><br><br>
+
 
   <!-- Icono de WhatsApp flotante -->
-<a href="https://wa.me/12345678" target="_blank" class="floating-icon">
-  <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
-</a>
+  <a href="https://wa.me/12345678" target="_blank" class="floating-icon">
+    <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
+  </a>
 
-<!-- Mensaje con animación y icono de persona usuario -->
-<div class="help-message">
-  <div class="user-icon">
-    <i class="fas fa-user"></i>
+  <!-- Mensaje con animación y icono de persona usuario -->
+  <div class="help-message">
+    <div class="user-icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="message">
+      <p>¿En qué podemos ayudarte?</p>
+    </div>
   </div>
-  <div class="message">
-    <p>¿En qué podemos ayudarte?</p>
-  </div>
-</div>
 
 
   <!-- Icono de Messenger flotante -->
