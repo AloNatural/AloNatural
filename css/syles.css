@@ -42,6 +42,7 @@ body {
   margin-top: 10px;
 }
 .social-icons span {
+  font-size: 19px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -140,13 +141,7 @@ color: rgb(255, 255, 255); /* Agregado para cambiar el color del texto a negro *
   margin-top: -24px;
 }
 
-/* Media Query para dispositivos móviles */
-@media only screen and (max-width: 767px) {
-  #carouselExampleIndicators {
-    width: 435px;
-    margin-left: -15px; /* Ajusta este valor según sea necesario */
-  }
-}
+
 
 
 
