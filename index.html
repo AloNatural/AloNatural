@@ -45,10 +45,10 @@
     <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+  <nav style="height: 55px;" class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
+        <img src="img/iconfarma.png" alt="Icono de Farmacia" style="width: 26px; height: 26px; margin-top: -5px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#Inicio">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">
               <i class="fas fa-home"></i> Inicio
             </a>
           </li>
@@ -67,11 +67,7 @@
               <i class="fas fa-shopping-bag"></i> Productos
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Servicios">
-              <i class="fas fa-concierge-bell"></i> Servicios  
-            </a>
-          </li>
+       
           <li class="nav-item">
             <a class="nav-link text-white" href="#Contacto">
               <i class="fas fa-envelope"></i> Contactanos
@@ -117,9 +113,9 @@
   </div>
 
 	<!-- Productos -->
-  <section class="container blogs" style="background-image: url('img/Reibot.png'); border-radius: 10px; background-size: cover; background-position: center;">
+  <section class="container blogs" style="background-image: url('/img/Otros\ Productos.png'); border-radius: 10px; background-size: cover; background-position: center;">
     <div class="container-blogs">
-        <h1 style="font-size: 22px; margin-top: 10px; margin-left: 10px;" class="heading-1"> Categoria de Productos</h1><br><br><br>
+        <h1 style="font-size: 22px; color: white; margin-top: 10px; margin-left: 10px;" class="heading-1"> Categoria de Productos</h1><br><br><br>
 
         <style>
           .blogs {
@@ -147,7 +143,6 @@
             .container-blogs {
                 max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
                 padding: 10px; /* Ajusta el relleno según tus necesidades */
-                background-color: rgba(255, 255, 255, 0.2); /* Ajusta el color de fondo y la opacidad según tus necesidades */
                 border-radius: 10px;
             }
         </style>
@@ -160,20 +155,20 @@
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
-        <img src="img/Puritans icon.png" class="card-img-top" alt="Productos Puritans">
+        <img src="img/reibot icon.png" class="card-img-top" alt="Productos Puritans">
         <div class="card-body">
-          <h5 class="card-title">Productos Puritans</h5>
-          <p class="card-text">Descubre nuestra selección de productos Puritans.</p>
+          <h5 class="card-title">Productos Reibot</h5>
+          <p class="card-text">Explora nuestros Productos Reibot para tu bienestar.</p>
          <center> <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
-        <img src="img/reibot icon.png" class="card-img-top" alt="Productos Reibot">
+        <img src="img/Puritans icon.png" class="card-img-top" alt="Productos Reibot">
         <div class="card-body">
-          <h5 class="card-title">Productos Reibot</h5>
-          <p class="card-text">Explora nuestros productos Reibon para tu bienestar.</p>
+          <h5 class="card-title">Productos Puritans</h5>
+          <p class="card-text">Descubre nuestra selección de productos Puritans.</p>
           <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
 
         </div>
@@ -186,32 +181,13 @@
           <h5 class="card-title">Productos Americanos</h5>
           <p class="card-text">Conoce nuestros productos americanos de calidad.</p>
          <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center> 
-
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-4">
-      <div id="categoria1" style="display: none;">
-        <!-- Contenido de la categoría 1 -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div id="categoria2" style="display: none;">
-        <!-- Contenido de la categoría 2 -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div id="categoria3" style="display: none;">
-        <!-- Contenido de la categoría 3 -->
-      </div>
-    </div>
-  </div>
-  <!-- Contenido de los productos americanos -->
 </div>
 
-<br><br><br><br><br><br><br>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container container-footer">
@@ -273,9 +249,10 @@
   </footer>
 
   <!-- Icono de WhatsApp flotante -->
-<a href="https://wa.me/12345678" target="_blank" class="floating-icon">
-  <img style="width: 37px;" src="img/social.png" alt="WhatsApp">
-</a>
+  <a href="https://wa.me/12345678" target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
+    <img style="width: 37px;" src="img/social.png" alt="WhatsApp">
+  </a>
+  
 
 <!-- Mensaje con animación y icono de persona usuario -->
 <div class="help-message">
@@ -288,10 +265,9 @@
 </div>
 
 
-  <!-- Icono de Messenger flotante -->
-  <a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="bottom: 90px;">
-    <img src="img/mensajero.png" alt="Messenger">
-  </a>
+<a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
+  <img style="width: 33px;" src="img/mensajero.png" alt="Messenger">
+</a>
 
   <script>
     function mostrarCategorias() {
