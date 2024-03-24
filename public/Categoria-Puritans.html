@@ -6,104 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alo Natural</title>
   <link rel="shortcut icon" href="img/iconfarma.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/syles.css">
+  <link rel="stylesheet" href="/css/syles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Q6E5NHz8H9+L5Trn0Z8QzFNY5dPpuC3vw4zW+9aivzMSf/DZJopnCKWt6mi1SR87" crossorigin="anonymous">
+
+  <style>
+    .categoria-card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .categoria-card:hover {
+      transform: translateY(-5px);
+    }
+
+
+    
+  </style>
 </head>
 
 <body>
+
+  <style>
+.new-navbar-icon {
+    /* Estilos para el nuevo ícono */
+    /* Por ejemplo, si estás utilizando una fuente de íconos */
+    font-family: "Font Awesome"; /* o la fuente que estés utilizando */
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: white; /* Color blanco */
+    /* Si estás utilizando una imagen como ícono */
+    /* background-image: url('ruta-a-la-imagen'); */
+}
+
+  </style>
   <!-- Container Hero -->
   <div class="container-hero">
     <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
   </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+  <nav style="height: 55px;" class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
+        <img src="../img/iconfarma.png" alt="Icono de Farmacia" style="width: 26px; height: 26px; margin-top: -5px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i style="color: white; font-size: 25px;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
+</button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#Inicio">Inicio</a>
+            <a class="nav-link active text-white" aria-current="page" href="index.html">
+              <i class="fas fa-home"></i> Inicio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">Productos</a>
+            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
+              <i class="fas fa-shopping-bag"></i> Productos
+            </a>
           </li>
+       
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Contacto">Contacto</a>
+            <a class="nav-link text-white" href="#Contacto">
+              <i class="fas fa-envelope"></i> Contactanos
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  
-  
-<!-- Productos -->
-<div class="container mt-4" id="Productos" style="display: none;">
-  <h2>Productos</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-pills fa-2x"></i>
-          <h5 class="card-title">Productos Puritans</h5>
-          <p class="card-text">¡Descubre nuestra selección de productos Puritans!</p>
-          <a href="/public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-prescription-bottle-alt fa-3x"></i>
-          <h5 class="card-title">Productos Reibon</h5>
-          <p class="card-text">¡Explora nuestros productos Reibon para tu bienestar!</p>
-          <a href="#" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
-        <img src="img/Americanos.png" class="card-img-top" alt="Imagen de Producto">
-        <div class="card-body">
-          <i class="fas fa-first-aid fa-3x"></i>
-          <h5 class="card-title">Productos Americanos</h5>
-          <p class="card-text">¡Conoce nuestros productos americanos de calidad!</p>
-          <a href="public/Productos-Americanos.html" class="btn btn-verde-medicinal rounded-pill" onclick="mostrarProductosAmericanos()">Ver catálogo de productos</a> <!-- Botón para ver el catálogo -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="categoria1" style="display: none;">
-    <!-- Contenido de la categoría 1 -->
-  </div>
-  <div id="categoria2" style="display: none;">
-    <!-- Contenido de la categoría 2 -->
-  </div>
-  <div id="categoria3" style="display: none;">
-    <!-- Contenido de la categoría 3 -->
-  </div>
 
-  <!-- Contenido de los productos americanos -->
+			<!-- Banner -->
+      <section class="banner">
+        <div class="content-banner">
+                  <style>
+        .banner {
+      background-image: url('../img/CATEGORIA\ DE\ PRODUCTOS.png');
+      height: 30rem;
+      background-size: cover;
+      background-position: center 35%; /* Mueve la imagen hacia abajo */
+  }
   
-     
-    </div>
-  </div>
-</div>
-
+  
+  
+  
+  .content-banner {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+  }
+  
+  .content-banner p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .content-banner h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .content-banner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+  }
+  
+                  </style>
+        </div>
+      </section>
+      
 
 <style>
  
@@ -164,6 +188,17 @@
       max-width: 200%;
     }
   }
+
+  .capsules {
+  position: absolute;
+  top: 10px; /* ajusta el valor según sea necesario */
+  right: 10px; /* ajusta el valor según sea necesario */
+  background-color: rgb(54, 221, 12); /* color de fondo de la viñeta */
+  color: white; /* color del texto de la viñeta */
+  padding: 5px 10px; /* ajusta el relleno según sea necesario */
+  border-radius: 5px; /* ajusta el radio de borde según sea necesario */
+  font-size: 14px; /* ajusta el tamaño de fuente según sea necesario */
+}
 </style>
 
  <!-- Contenido principal -->
@@ -182,141 +217,1021 @@
  
 </div>
 
+    <div class="container">
+      <div class="row">
+     
 
-<div class="container">
-  <div class="row">
-    <!-- Producto 1 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <center><img style="width: 105px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MW_bUfdHj66ydWo7xCh.jpg" class="card-img-top" alt="Vaginox"></center>
-        <div class="content-card-product">
-          <h5 class="card-title">VIT D3 10,000 IU PURITANGS</h5>
-          <p class="card-text">ESTRUCTURA OSEA, DEFENSAS</p>
-          <p class="card-text price">L.297.00</p>
-        </div>
-      </div>
+  
+  <!-- Producto 1 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 120px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MW_bUfdHj66ydWo7xCh.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT D3 10,000 IU PURITANGS</h5>
+      <p class="card-text">ESTRUCTURA OSEA, DEFENSAS</p>
+      <p class="card-text price">L.297.00</p>
     </div>
-    <!-- Producto 2 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-       <center> <img style="width: 110px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DAVavqevZZR0Fr.jpg" class="card-img-top" alt="Super Magnesio"></center>
-        <div class="content-card-product">
-          <h5 class="card-title">HAIR SKIN & NAILS PURITANS ONE PER DAY 60 TABS</h5>
-          <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
-          <p class="card-text price">L.284.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Tabs</div>
+    <center><img style="width: 120px; margin-top: 10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DAVavqevZZR0Fr.jpg" class="card-img-top" alt="Artricalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HAIR SKIN & NAILS PURITANS ONE PER DAY</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.284.00</p>
+
     </div>
-    <!-- Producto 3 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-       <center><img style="width: 120px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DAVavqevZZR0Fx.jpg" class="card-img-top" alt="Memorix"></center> 
-        <div class="content-card-product">
-          <h5 class="card-title">MAGNESIUM CITRATE 200MG 90 CAPS</h5>
-          <p class="card-text">FORTALECEDOR DE HUESOS Y ARTICULACIONES</p>
-          <p class="card-text price">L.288.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 3 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 cápsulas</div>
+    <center><img style="width: 120px; margin-top: 10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DAVavqevZZR0Fx.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MAGNESIUM CITRATE 200MG</h5>
+      <p class="card-text">FORTALECEDOR DE HUESOS Y ARTICULACIONES</p>
+      <p class="card-text price">L.288.00</p>
     </div>
-    <!-- Producto 4 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 4 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">30 TABS</div><br><br>
+    <center><img style="width: 226px; margin-top: -10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DBxzJq2Ezd6qQL.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MELATONINA 10MG PURITANS</h5>
+      <p class="card-text">INSOMNIO</p>
+      <p class="card-text price">L.168.00</p>
     </div>
-    <!-- Producto 5 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 5 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 PERLAS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-N6KAUZsaC6mPiwy2oxw.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">OMEGA -3 1200MG PURITANS</h5>
+      <p class="card-text">COLESTEROL, TRIGLICERIDOS</p>
+      <p class="card-text price">L.229.00</p>
     </div>
-    <!-- Producto 6 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 6 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">16 ONZ</div><br><br>
+    <center><img style="width: 165px; height: 220px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DCYovYRB8beyAx.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VINAGRE DE MANZANA LIQUIDO</h5>
+      <p class="card-text">DIGESTIVO, HIGADO, ADELGAZANTE</p>
+      <p class="card-text price">L.237.00</p>
     </div>
-    <!-- Producto 7 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 8 -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card card-product">
-        <img src="/imgAmericanos/Super Magnesio-Americano.jpeg" class="card-img-top" alt="Super Magnesio">
-        <div class="content-card-product">
-          <h5 class="card-title">Super Magnesio 60 Cápsulas</h5>
-          <p class="card-text">Suplemento para el sistema óseo. Mejora la salud de tus huesos.</p>
-          <p class="card-text price">L.181.00</p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Producto 7 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div  class="capsules">50 PERLAS</div><br><br>
+    <center><img style="width: 200px; height: 260px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DBxzJq2Ezd6qQN.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-E 1000 IU PURITANS</h5>
+      <p class="card-text">PIEL, ANTIOXIDANTE</p>
+      <p class="card-text price">L.274.00</p>
+
     </div>
   </div>
 </div>
 
 
-<br><br><br><br><br><br>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container container-footer">
-      <div class="menu-footer">
-        <div class="contact-info">
-          <p class="title-footer">Información de Contacto</p>
-          <ul>
-            <li>Dirección: Barrio El Benque 7 calle, entre 7 y 8 calle S.O. San Pedro Sula, Cortés</li>
-            <li>Teléfono: 3226-2944 / 3268-4168 HN</li>
-            <li>Email: alonaturalhn@gmail.com</li>
-          </ul>
-          <div class="social-icons">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-whatsapp"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
-          </div>
-        </div>
-        <div class="information">
-          <p class="title-footer">Información</p>
-          <ul>
-            <li><a href="#">Acerca de Nosotros</a></li>
-            <li><a href="#">Información Delivery</a></li>
-            <li><a href="#">Políticas de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Contáctanos</a></li><br>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <img src="/img/MerazLabs (2).png" alt="MerazLabs Logo" style="width: 150px;">
-      </div>
-      <p>Alo Natural &copy; 2024</p>
+
+
+<!-- Producto 8 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 CAPS</div><br><br>
+    <center>
+      <img style="width: 125px; transform: scale(1.7);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DBxzJq2Ezd6qQQ.jpg" class="card-img-top" alt="Anti-Alcohol">
+    </center>
+    <div class="content-card-product"><br><br>
+      <h5 class="card-title">B-12 500MCG PURITANS</h5>
+      <p class="card-text">OXIGENADOR CEREBRAL</p>
+      <p class="card-text price">L.180.00</p>
     </div>
-  </footer>
+  </div>
+</div>
+
+<!-- Producto 9 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 TABS</div><br><br>
+    <center><img style="width: 180px;  transform: scale(1.7); margin-top: -50px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DCYovYRB8beyAu.jpg" class="card-img-top" alt="Anti-Alcohol"></center>
+    <div class="content-card-product"><br>
+      <h5 class="card-title">BIOTIN 5,000 MCG PURITANS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.256.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 10 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 TABS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DFgYtncoSLlcje.jpg" class="card-img-top" alt="Antibiotico Intestinal"></center>
+    <div class="content-card-product"><br>
+      <h5 class="card-title">ACIDOPHILUS PROBIOTIC 3MIL PURITANS</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.266.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 11 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 TABS</div><br><br>
+    <center><img style="width: 160px;  transform: scale(1.4);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DDbjB7g188sFQZ.jpg" class="card-img-top" alt="A-Belx"></center>
+    <div class="content-card-product"><br>
+      <h5 class="card-title">B-2 100MG PURITANS</h5>
+      <p class="card-text">VITAMINAS PARA EL CEREBRO</p>
+      <p class="card-text price">L.196.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 12 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 TABS</div><br><br><br>
+    <center><img style="width: 210px; transform: scale(1.1);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DE7UZuR9HZXz_l.jpg" class="card-img-top" alt="Az-Forte"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-C 500MG Masticable PURITANS</h5>
+      <p class="card-text">ANTIOXIDANTE</p>
+      <p class="card-text price">L.170.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 13 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 190px;  transform: scale(1.1);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7DDbjB7g188sFQW.jpg" class="card-img-top" alt="Apetotix"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MELATONINA 5MG PURITANS</h5>
+      <p class="card-text">INSOMNIO</p>
+      <p class="card-text price">L.228.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 14 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 TABS</div><br><br>
+    <center><img style="width: 165px;  transform: scale(1.5);" src="/imgAmericanos/HTC.png" class="card-img-top" alt="Anti-Alergica"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HAIR, SKIN & NAILS PURITANS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.284.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 15 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 TABS</div><br><br>
+    <center><img style="width: 165px;  transform: scale(1.5);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="Anti-Alergica"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CALCIUM, MAGNESIUM Y ZINC PURITANS</h5>
+      <p class="card-text">FORTALECEDOR DE HUESOS Y ARTICULACIONES</p>
+      <p class="card-text price">L.227.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 16 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 170px ; transform: scale(1.5);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7Ea_W6Y4BLuAhz9.jpg" class="card-img-top" alt="Anti-Hongos"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">TRIPLE MAGNESUIM COMPLEX 400MG PURITANS</h5>
+      <p class="card-text">FORTALECEDOR DE HUESOS Y ARTICULACIONES</p>
+      <p class="card-text price">L.245.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 17 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 PERLAS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7E_i6xY3HpbFRC9.jpg" class="card-img-top" alt="Anti-Acne"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GARLIC & PARLES PURITANS</h5>
+      <p class="card-text">CIRCULACION</p>
+      <p class="card-text price">L.244.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 18 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">50 PERLAS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7E_i6xY3HpbFRCC.jpg" class="card-img-top" alt="African Superman"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">BIOTIN 10,000 MCG PURITANS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.277.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 19 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 CAPS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7EkEQWt3sNxqkJS.jpg" class="card-img-top" alt="Acai Berry"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SAW PALMETTO 450MG PURITANS</h5>
+      <p class="card-text">PROSTATITIS</p>
+      <p class="card-text price">L.342.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 20 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 TABS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7Eiwh73ba_zBEpF.jpg" class="card-img-top" alt="Aloe Vera Nayal"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ACIDOPHILUS PROBIOTIC PURITANS</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.187.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 21 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 PERLAS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7EFHHDKUdSrBTKc.jpg" class="card-img-top" alt="Biox Diabetes"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MILK THISTLE 1000MG. PURITANS</h5>
+      <p class="card-text">REPARADOR HEPATICO</p>
+      <p class="card-text price">L.288.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 22 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 TABS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7EFHHDKUdSrBTK_.jpg" class="card-img-top" alt="Bucalvest"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CHROMIUM PICOLINATE PURITANS</h5>
+      <p class="card-text">DIABETES</p>
+      <p class="card-text price">L.187.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 23 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 CAPS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7ECZcVb4k_sQVvH.jpg" class="card-img-top" alt="Bacteridox"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">B-12 1000MCG PURITANS</h5>
+      <p class="card-text">OXIGENADOR CEREBRAL</p>
+      <p class="card-text price">L.270.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 24 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 PERLAS</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeU7EGIdpZOa8m_eir.jpg" class="card-img-top" alt="Black Ant King"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GARLIC OIL 1000MG</h5>
+      <p class="card-text">DESINTOXICANTE, PRESION ALTA</p>
+      <p class="card-text price">L.258.00</p>
+    </div>
+  </div> 
+</div>
+
+<!-- Producto 25 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SHARK CARTILAGE PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SHARK CARTILAGE PURITANS 100 CAPS</h5>
+      <p class="card-text">ARTICULACIONES, DOLOR</p>
+      <p class="card-text price">L.327.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 26 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="FOLIC ACID 800MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">FOLIC ACID 800MG PURITANS 100 TABS</h5>
+      <p class="card-text">VITAMINAS, FORTALECEDOR DE LA SANGRE</p>
+      <p class="card-text price">L.200.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 27 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MELATONINA 5MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MELATONINA 5MG PURITANS 120 CAPS</h5>
+      <p class="card-text">INSOMNIO</p>
+      <p class="card-text price">L.291.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 28 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="COMPLETE B PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">COMPLETE B PURITANS 100 TAB</h5>
+      <p class="card-text">METABOLISMO, MULTIVITAMINICO, HIDROSALUDABLE</p>
+      <p class="card-text price">L.318.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 29 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SEA KELP PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SEA KELP PURITANS 250 TAB</h5>
+      <p class="card-text">TIROIDES, PERDIDA DE PESO</p>
+      <p class="card-text price">L.274.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 30 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="CO Q-10 100MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CO Q-10 100MG PURITANS P. 30 PERLAS</h5>
+      <p class="card-text">CARDIOVASCULAR, CIRCULACION</p>
+      <p class="card-text price">L.239.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 31 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VITAMIN D3 5000IU PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VITAMIN D3 5000IU PURITANS P. 100 PERLAS</h5>
+      <p class="card-text">FORTALECEDOR DE HUESOS, PIEL</p>
+      <p class="card-text price">L.195.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 32 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="RESVERATROL 50MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">RESVERATROL 50MG PURITANS P. 60 PERLAS</h5>
+      <p class="card-text">REJUVENECEDOR, ANTIOXIDANTE</p>
+      <p class="card-text price">L.270.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 33 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SPIRULINA 500MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SPIRULINA 500MG PURITANS 100 TAB</h5>
+      <p class="card-text">ADELGAZANTE, TIROIDES</p>
+      <p class="card-text price">L.232.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 34 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="APPLE CIDER VINEGAR"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">APPLE CIDER VINEGAR 90 TABS</h5>
+      <p class="card-text">DIGESTIVO, HIGADO, ADELGAZANTE</p>
+      <p class="card-text price">L.219.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 35 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="GINGER 550MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GINGER 550MG PURITANS 100 CAPS</h5>
+      <p class="card-text">VIAS RESPIRATORIAS. EXPECTORANTE</p>
+      <p class="card-text price">L.222.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 36 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="ZINC CHELATED 25MG P.P"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ZINC CHELATED 25MG P.P 100 TAB</h5>
+      <p class="card-text">DEFICIENCIA SEXUAL, DEGENERACION MUSCULAR</p>
+      <p class="card-text price">L.168.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 37 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="LUTEIN 20MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">LUTEIN 20MG PURITANS 30 PERLAS</h5>
+      <p class="card-text">VISION</p>
+      <p class="card-text price">L.200.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 38 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VITAMIN K 100MCG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VITAMIN K 100MCG PURITANS 100 TAB</h5>
+      <p class="card-text">COAGULANTE DE LA SANGRE</p>
+      <p class="card-text price">L.238.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 39 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="GRAPESEED EXTRACT 100MG"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GRAPESEED EXTRACT 100MG 50 CAPS</h5>
+      <p class="card-text">ANTIOXIDANTE, CIRCULACION, OXIGENADOR</p>
+      <p class="card-text price">L.200.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 40 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="PAPAYA ENZYME PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">PAPAYA ENZYME PURITANS MASTICABLE 100 TABS</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.187.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 41 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="GLUCOSAMINA PURITANS PRIDE"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GLUCOSAMINA PURITANS PRIDE 60 TABS</h5>
+      <p class="card-text">ARTICULACIONES, FORTALECEDOR DE HUESOS</p>
+      <p class="card-text price">L.310.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 42 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="IRON P.P."></center>
+    <div class="content-card-product">
+      <h5 class="card-title">IRON P.P. 100 TAB</h5>
+      <p class="card-text">VITAMINAS</p>
+      <p class="card-text price">L.165.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 43 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="CHLOROFILA P.P."></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CHLOROFILA P.P. 100 TAB</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.164.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 44 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SELENIUM P.P."></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SELENIUM P.P. 100 TAB</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.200.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 45 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="EVENING PRIMROSE OIL"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">EVENING PRIMROSE OIL 500MG 100 PERLAS</h5>
+      <p class="card-text">HORMONAL, GLANDULAR</p>
+      <p class="card-text price">L.228.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 46 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="ACEITE VIT-E PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ACEITE VIT-E PURITANS P. 2.5 ONZ</h5>
+      <p class="card-text">PIEL, ANTIOXIDANTE</p>
+      <p class="card-text price">L.233.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 47 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="STRESS FORMULA"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">STRESS FORMULA 60 CAPS PURITANS</h5>
+      <p class="card-text">SISTEMA NERVIOSO</p>
+      <p class="card-text price">L.0.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 48 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VITAMIN A 2400 8000IU PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VITAMIN A 2400 8000IU PURITANS P. 100 PERLAS</h5>
+      <p class="card-text">VISION</p>
+      <p class="card-text price">L.158.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 49 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SOY LECITHIN 1325MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SOY LECITHIN 1325MG PURITANS P. 100 PERLAS</h5>
+      <p class="card-text">HIGADO GRASO</p>
+      <p class="card-text price">L.308.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 50 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VIT-E 1000 IU PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-E 1000 IU PURITANS 100 PERLAS</h5>
+      <p class="card-text">PIEL, ANTIOXIDANTE</p>
+      <p class="card-text price">L.356.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 51 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VIT-E 400IU PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-E 400IU PURITANS 50 PERLAS</h5>
+      <p class="card-text">PIEL, ANTIOXIDANTE</p>
+      <p class="card-text price">L.180.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 52 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="SOY LECITHIN 1200MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">SOY LECITHIN 1200MG PURITANS P. 100 PERLAS</h5>
+      <p class="card-text">HIGADO GRASO</p>
+      <p class="card-text price">L.259.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 53 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="BIOTIN 10000 MCG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">BIOTIN 10000 MCG PURITANS 30 TABS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.179.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 54 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MACA 1000MG"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MACA 1000MG 60 TABS</h5>
+      <p class="card-text">POTENCIA SEXUAL, NERVIOS</p>
+      <p class="card-text price">L.206.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 55 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="GARCINIA CAMBOGIA 500MG P.P"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GARCINIA CAMBOGIA 500MG P.P 60 CAPS</h5>
+      <p class="card-text">QUEMADOR DE GRASA, QUITA EL APETITO</p>
+      <p class="card-text price">L.219.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 56 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="HAIR SKIN & NAILS PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HAIR SKIN & NAILS PURITANS 90 TAB</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.342.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 57 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="POTASSIUM 99MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">POTASSIUM 99MG PURITANS 100 TAB</h5>
+      <p class="card-text">DEFICIENCIA SEXUAL, DEGENERACION MUSCULAR</p>
+      <p class="card-text price">L.169.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 58 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="PRE-VITE CHILDREN’S CHEWABLE"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">PRE-VITE CHILDREN’S CHEWABLE 100 TAB</h5>
+      <p class="card-text">MULTIVITAMINICO PARA NIÑOS</p>
+      <p class="card-text price">L.288.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 59 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MELATONIN 10MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MELATONIN 10MG PURITANS 60 TABS</h5>
+      <p class="card-text">INSOMNIO</p>
+      <p class="card-text price">L.308.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 60 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="ONE DAILY WOMENS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ONE DAILY WOMENS 100 TABS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA MUJERES</p>
+      <p class="card-text price">L.304.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 61 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="ONE DAILY MENS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ONE DAILY MENS 100 TABS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA HOMBRES</p>
+      <p class="card-text price">L.337.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 62 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VIT-C 500MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-C 500MG PURITANS 30 TABS</h5>
+      <p class="card-text">ANTIOXIDANTE</p>
+      <p class="card-text price">L.130.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 63 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="LYCOPENE 10MG"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">LYCOPENE 10MG 100 TABS</h5>
+      <p class="card-text">PROSTATA</p>
+      <p class="card-text price">L.210.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 64 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="CALCIUM, MAGNESIUM + VIT. D3 P.P"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CALCIUM, MAGNESIUM + VIT. D3 P.P 120 TABS</h5>
+      <p class="card-text">REGENERADOR DE HUESOS</p>
+      <p class="card-text price">L.242.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 65 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MELATONINA 10MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MELATONINA 10MG PURITANS 45 TABS</h5>
+      <p class="card-text">INSOMNIO</p>
+      <p class="card-text price">L.209.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 66 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="VIT-C 500MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT-C 500MG PURITANS 90 TABS MASTICABLE</h5>
+      <p class="card-text">ANTIOXIDANTE</p>
+      <p class="card-text price">L.255.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 67 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="OMEGA 3-6-9 PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">OMEGA 3-6-9 PURITANS 60 PERLAS</h5>
+      <p class="card-text">COLESTEROL, TRIGLICERIOS Y SISTEMA CIRCULATORIO</p>
+      <p class="card-text price">L.225.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 68 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MULTI-ENZYME FORMULA"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MULTI-ENZYME FORMULA 60 TABS</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.242.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 69 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="PRENATAL VITAMINS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">PRENATAL VITAMINS 100 TAB</h5>
+      <p class="card-text">MULTIVITAMINICO PARA EMBARAZADAS</p>
+      <p class="card-text price">L.241.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 70 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="CRANBERRY 25000MG ONE PER DAY"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">CRANBERRY 25000MG ONE PER DAY 60 CAPS</h5>
+      <p class="card-text">ANTIOXIDANTE, REJUVENECEDOR</p>
+      <p class="card-text price">L.245.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 71 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="OREGANO EXTRACT OIL"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">OREGANO EXTRACT OIL 1'500MG 90 PERLAS</h5>
+      <p class="card-text">ANTIOXIDANTE, EXPECTORANTE, DESPARACITANTE, ANTIBA...</p>
+      <p class="card-text price">L.239.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 72 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="B-12 1000MCG N. BOUNTY"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">B-12 1000MCG N. BOUNTY 100 TAB</h5>
+      <p class="card-text">OXIGENADOR CEREBRAL</p>
+      <p class="card-text price">L.167.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 73 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="MAGNESIUM CITRATE"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MAGNESIUM CITRATE 100MG 100 CAPS</h5>
+      <p class="card-text">FORTALECEDOR DE HUESOS Y ARTICULACIONES</p>
+      <p class="card-text price">L.307.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 74 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="PUMPKIN SEED OIL"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">PUMPKIN SEED OIL (ACEITE DE CALABAZA) 1,000MG</h5>
+      <p class="card-text">Fortalecer próstata</p>
+      <p class="card-text price">L.175.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 75 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="HAIR SKIN & NAILS PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HAIR SKIN & NAILS PURITANS ONE PER DAY 30 PERLAS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.130.00</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Producto 76 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="ABC PLUS SENIOR MULTI"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ABC PLUS SENIOR MULTI 60 TABS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA ADULTO +50</p>
+      <p class="card-text price">L.200.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 77 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="BETA-CAROTENO"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">BETA-CAROTENO 25,000IU 100 PERLAS</h5>
+      <p class="card-text">VISION</p>
+      <p class="card-text price">L.179.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 78 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="OMEGA 3,5,6,7,9 PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">OMEGA 3,5,6,7,9 PURITANS 60 PERLAS</h5>
+      <p class="card-text">COLESTEROL, TRIGLICERIOS, SISTEMA CIRCULATORIO Y S...</p>
+      <p class="card-text price">L.278.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 79 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="BIOTIN 10,000 MCG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">BIOTIN 10,000 MCG PURITANS 30 PERLAS</h5>
+      <p class="card-text">MULTIVITAMINICO PARA CABELLO, PIEL Y UÑAS</p>
+      <p class="card-text price">L.179.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 80 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="L-THEANINE 200MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">L-THEANINE 200MG 60 CAPS PURITANS</h5>
+      <p class="card-text">SISTEMA NERVIOSO</p>
+      <p class="card-text price">L.0.00</p> <!-- Is the price correct? It's listed as 0.00 -->
+    </div>
+  </div>
+</div>
+
+<!-- Producto 81 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/prod..." class="card-img-top" alt="GOSLIM TE (TE VERDE)"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">GOSLIM TE (TE VERDE) 30 SOBRES</h5>
+      <p class="card-text">REDUCTOR DE PESO</p>
+      <p class="card-text price">L.170.00</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
 
   <!-- Icono de WhatsApp flotante -->
-<a href="https://wa.me/12345678" target="_blank" class="floating-icon">
-  <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
-</a>
+  <a href="https://wa.me/12345678" target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
+    <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
+  </a>
+  
 
 <!-- Mensaje con animación y icono de persona usuario -->
 <div class="help-message">
@@ -329,30 +1244,12 @@
 </div>
 
 
-  <!-- Icono de Messenger flotante -->
-  <a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="bottom: 90px;">
-    <img src="../img/mensajero.png" alt="Messenger">
-  </a>
+<a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
+  <img style="width: 33px;" src="../img/mensajero.png" alt="Messenger">
+</a>
 
-  <script>
-    function mostrarCategorias() {
-      var productos = document.getElementById('Productos');
-      if (productos.style.display === 'none') {
-        productos.style.display = 'block';
-      } else {
-        productos.style.display = 'none';
-      }
-    }
 
-    function mostrarCategoria(categoria) {
-      // Ocultar todas las categorías
-      document.querySelectorAll('[id^="categoria"]').forEach(function (el) {
-        el.style.display = 'none';
-      });
-      // Mostrar la categoría seleccionada
-      document.getElementById(categoria).style.display = 'block';
-    }
-  </script>
+<script src="/js/app.js"></script>
 
   <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
