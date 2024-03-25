@@ -11,6 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Q6E5NHz8H9+L5Trn0Z8QzFNY5dPpuC3vw4zW+9aivzMSf/DZJopnCKWt6mi1SR87" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .categoria-card {
@@ -29,54 +30,55 @@
 <body>
 
   <style>
-.new-navbar-icon {
-    /* Estilos para el nuevo ícono */
-    /* Por ejemplo, si estás utilizando una fuente de íconos */
-    font-family: "Font Awesome"; /* o la fuente que estés utilizando */
-    font-size: 1.5rem; /* Tamaño del ícono */
-    color: white; /* Color blanco */
-    /* Si estás utilizando una imagen como ícono */
-    /* background-image: url('ruta-a-la-imagen'); */
-}
-
-  </style>
-  <!-- Container Hero -->
-  <div class="container-hero">
-    <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
-  </div>
-  <!-- Navbar -->
-  <nav style="height: 55px;" class="navbar navbar-expand-lg navbar-light navbar-custom">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/iconfarma.png" alt="Icono de Farmacia" style="width: 26px; height: 26px; margin-top: -5px">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i style="color: white; font-size: 25px;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
-</button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="index.html">
-              <i class="fas fa-home"></i> Inicio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
-              <i class="fas fa-shopping-bag"></i> Productos
-            </a>
-          </li>
-       
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Contacto">
-              <i class="fas fa-envelope"></i> Contactanos
-            </a>
-          </li>
-        </ul>
+    .new-navbar-icon {
+        /* Estilos para el nuevo ícono */
+        /* Por ejemplo, si estás utilizando una fuente de íconos */
+        font-family: "Font Awesome"; /* o la fuente que estés utilizando */
+        font-size: 1.5rem; /* Tamaño del ícono */
+        color: white; /* Color blanco */
+        /* Si estás utilizando una imagen como ícono */
+        /* background-image: url('ruta-a-la-imagen'); */
+    }
+    
+      </style>
+      <!-- Container Hero -->
+      <div class="container-hero">
+        <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
       </div>
-    </div>
-  </nav>
+      <!-- Navbar -->
+      <nav style="height: 55px;" class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../img/iconfarma.png" alt="Icono de Farmacia" style="width: 26px; height: 26px; margin-top: -5px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i style="color: white; font-size: 25px;" class="fa-solid fa-bars"></i></span> <!-- Nueva clase para el ícono -->
+    </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="../index.html">
+                  <i class="fas fa-home"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Productos" onclick="mostrarCategorias()">
+                  <i class="fas fa-shopping-bag"></i> Productos
+                </a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Contacto">
+                  <i class="fas fa-envelope"></i> Contactanos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
 
 
   <!-- Contenido principal -->
@@ -115,7 +117,9 @@
 	<!-- Productos -->
   <section class="container blogs" style="background-image: url('/img/Otros\ Productos.png'); border-radius: 10px; background-size: cover; background-position: center;">
     <div class="container-blogs">
-        <h1 style="font-size: 22px; color: white; margin-top: 10px; margin-left: 10px;" class="heading-1"> Categoria de Productos</h1><br><br><br>
+        <h1 style="font-size: 22px; color: white; margin-top: 10px; margin-left: 10px;" class="heading-1">    
+          <!-- Icono de cesta de compras -->
+          Categoria de Productos</h1><br><br><br>
 
         <style>
           .blogs {
@@ -127,7 +131,7 @@
 @media only screen and (max-width: 767px) {
     .blogs {
         width: 100%; /* Utiliza todo el ancho disponible */
-        height: 50px; /* Ajusta la altura según sea necesario */
+        height: 20px; /* Ajusta la altura según sea necesario */
     }
 }
 
@@ -149,38 +153,41 @@
 
     </div>
 </section>
-  
+
 <!-- Productos -->
 <div class="container mt-4" id="Productos">
   <div class="row">
     <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-primary" onclick="mostrarCategoria('categoria1')">
+      <div class="card categoria-card border" onclick="mostrarCategoria('categoria1')">
         <img src="img/reibot icon.png" class="card-img-top" alt="Productos Puritans">
         <div class="card-body">
           <h5 class="card-title">Productos Reibot</h5>
           <p class="card-text">Explora nuestros Productos Reibot para tu bienestar.</p>
          <center> <a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Reibot.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
+         <br>
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-success" onclick="mostrarCategoria('categoria2')">
+      <div class="card categoria-card border " onclick="mostrarCategoria('categoria2')">
         <img src="img/Puritans icon.png" class="card-img-top" alt="Productos Reibot">
         <div class="card-body">
           <h5 class="card-title">Productos Puritans</h5>
           <p class="card-text">Descubre nuestra selección de productos Puritans.</p>
           <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Puritans.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
+          <br>
 
         </div>
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card categoria-card border border-danger" onclick="mostrarCategoria('categoria3')">
+      <div class="card categoria-card border " onclick="mostrarCategoria('categoria3')">
         <img src="img/Americanos.png" class="card-img-top" alt="Productos Americanos">
         <div class="card-body">
           <h5 class="card-title">Productos Americanos</h5>
           <p class="card-text">Conoce nuestros productos americanos de calidad.</p>
-         <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center> 
+         <center><a style="background-color: rgb(32, 218, 32); color: white;" href="public/Categoria-Americanos.html" class="btn btn-verde-medicinal rounded-pill">Ver catálogo de productos</a></center>
+         <br>
         </div>
       </div>
     </div>
@@ -189,9 +196,9 @@
 
 
 <!-- Productos -->
-<section class="container blogs" style="background-image: url('/img/Alo\ Natural\ Acerca\ de\ Nosotros.png'); border-radius: 10px; background-size: cover; background-position: center;">
+<section class="container blogs" style="background-image: url('/img/Alo\ Natura\ Acerca\ de\ Nosotros.png'); border-radius: 10px; background-size: cover; background-position: center;">
   <div class="container-blogs">
-      <h1 style="font-size: 22px;  margin-top: 10px; margin-left: 10px;" class="heading-1"> Sub-Categorias</h1><br><br><br>
+      <h1 style="font-size: 24px;  margin-top: 10px; margin-left: -10px;" class="heading-1"> Sub-Categorias</h1><br><br><br>
 
       <style>
         .blogs {
@@ -331,6 +338,15 @@
   <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery (necesario para Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Popper.js (necesario para Bootstrap) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+<!-- JavaScript de Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 
 </html>
