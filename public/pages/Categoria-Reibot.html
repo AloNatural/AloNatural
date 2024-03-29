@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alo Natural</title>
+  <link rel="shortcut icon" href="../assets/img/iconfarma.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/syles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Q6E5NHz8H9+L5Trn0Z8QzFNY5dPpuC3vw4zW+9aivzMSf/DZJopnCKWt6mi1SR87" crossorigin="anonymous">
+
+  <style>
+    .categoria-card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .categoria-card:hover {
+      transform: translateY(-5px);
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Container Hero -->
+  <div class="container-hero">
+    <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="../pages/index.html">
+                  <i class="fas fa-home"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/Categorias.html" ">
+                  <i class="fas fa-shopping-bag"></i> Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/contact-us.html">
+                  <i class="fas fa-envelope"></i> Contactanos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/About-us.html">
+                  <i class="fas fa-user"></i> Acerca de Nosotros
+                </a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+			<!-- Banner -->
+      <section class="banner">
+        <div class="content-banner">
+                  <style>
+        .banner {
+      background-image: url('../assets/img/CATEGORIA\ DE\ PRODUCTOS.png');
+      height: 30rem;
+      background-size: cover;
+      background-position: center 35%; /* Mueve la imagen hacia abajo */
+  }
+  
+  
+  
+  
+  .content-banner {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+  }
+  
+  .content-banner p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .content-banner h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  .content-banner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+  }
+  
+                  </style>
+        </div>
+      </section>
+      
+
+<style>
+ 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col-md-6 {
+    flex: 0 0 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    margin: 20px;
+  }
+  .col-lg-4 {
+    flex: 0 0 calc(23% - 40px);
+    max-width: calc(25% - 40px);
+  }
+  .card-product {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(247, 246, 246, 0.1);
+    overflow: hidden;
+  }
+  .card-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  .content-card-product {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* Estilos para dispositivos Android */
+  @media only screen and (max-width: 767px) {
+    .col-md-6 {
+      flex: 0 0 calc(10% - 40px);
+      max-width: calc(10% - 40px);
+      margin: 20px;
+    }
+    .col-lg-4 {
+      flex: 0 0 60%;
+      max-width: 200%;
+    }
+  }
+
+  .capsules {
+  position: absolute;
+  top: 10px; /* ajusta el valor según sea necesario */
+  right: 10px; /* ajusta el valor según sea necesario */
+  background-color: rgb(54, 221, 12); /* color de fondo de la viñeta */
+  color: white; /* color del texto de la viñeta */
+  padding: 5px 10px; /* ajusta el relleno según sea necesario */
+  border-radius: 5px; /* ajusta el radio de borde según sea necesario */
+  font-size: 14px; /* ajusta el tamaño de fuente según sea necesario */
+}
+</style>
+
+ <!-- Contenido principal -->
+ <div class="container mt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+   
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      </div>
+    
+    </div>
+  
+  </div>
+  <!-- Espacio para el contenido adicional -->
+ 
+ 
+</div>
+
+    <div class="container">
+      <div class="row">
+     
+
+  
+  <!-- Producto 1 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 240px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3275804736.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Z-40 (Zona 40)</h5>
+      <p class="card-text">protector prostatico y potenciador</p>
+      <p class="card-text price">L.350.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 117px; margin-top: 10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2LQ68ZjnduhxiLtOE.jpg" class="card-img-top" alt="Artricalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">MACA DORADA 13140</h5>
+      <p class="card-text">	
+        potenciador Maca 60 caps 500 mg</p>
+      <p class="card-text price">L.218.00</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Producto 3 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 232px; margin-top: 10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxMDLFfmAUB0cWepTJ4.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Shark Cartilage</h5>
+      <p class="card-text">Inhibidor de células cancerosas, es utilizado para tratar la artritis, la psoriasis.</p>
+      <p class="card-text price">L.237.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 4 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 203px; margin-top: -10px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxMCAaHyIW6nZLmh-PA.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Magnesio citrate</h5>
+      <p class="card-text">Protege y fortalece huesos y dientes, produce energía, sintetiza proteínas y grasas.</p>
+      <p class="card-text price">L.175.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 5 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 187px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxMB0DZzirXCiajLCvw.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Calcio Magnesium Zinc</h5>
+      <p class="card-text">Apoya la salud de los huesos y músculos. Mejora el metabolismo, ayuda en el crecimiento adecuado, mejora el sistema inmunologico.</p>
+      <p class="card-text price">L.197.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 6 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 185px; height: 207px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxM9n86sLWVmuZwcOaM.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Pumpkin (Semilla de Calabaza)</h5>
+      <p class="card-text">Tiene un efecto beneficioso para la salud de la próstata..</p>
+      <p class="card-text price">L.187.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 7 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div  class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 200px; height: 225px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxM8TkqwqMW8U-9XXMx.jpg" class="card-img-top" alt="Articalm"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Graviola</h5>
+      <p class="card-text">Ayuda en casos de diabetes, raquitismo, catarros, ...</p>
+      <p class="card-text price">L.257.00</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Producto 8 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br><br><br>
+    <center>
+      <img style="width: 145px; transform: scale(1.5);" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxM4d4IjnKQaXLKEs81.jpg" class="card-img-top" alt="Anti-Alcohol">
+    </center>
+    <div class="content-card-product"><br>
+      <h5 class="card-title">Shark Cartilage plus Collage</h5>
+      <p class="card-text">Apoya la salud de los huesos y músculos...</p>
+      <p class="card-text price">L.290.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 9 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br><br><br>
+    <center><img style="width: 210px;  transform: scale(1.0); margin-top: -50px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MxM3eU1zGVORVIrNXFW.jpg" class="card-img-top" alt="Anti-Alcohol"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ortiga</h5>
+      <p class="card-text">Depurativo y diurético. Alivia síntomas de hiperplasia de próstata y la prostatitis.</p>
+      <p class="card-text price">L.158.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 10 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 Caps</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjzAgDuFsHy_4cdahX.jpg" class="card-img-top" alt="Antibiotico Intestinal"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Áloe Vit (PREMIUM)</h5>
+      <p class="card-text"> GASTRITIS, ESTREÑIMIENTO</p><br><br>
+      <p sty class="card-text price">L.166.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 11 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKM20Q6YKbR7bLeVC2n.jpg" class="card-img-top" alt="A-Belx"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Esencia de Liquidambar (Ozonizado)</h5>
+      <p class="card-text">ULCERAS GATRICAS Y EXTERNAS, LIMPIA OVARIOS...</p>
+      <p class="card-text price">L.130.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 12 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 240px; " src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGpLL831QgbfwnQIGzD.jpg" class="card-img-top" alt="Az-Forte"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Áloe vit</h5>
+      <p class="card-text">GASTRITIS, Estreñimiento, Sábila</p>
+      <p class="card-text price">L.136.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 13 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div><br><br>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGz6EG1XRZn6I9stX35.jpg" class="card-img-top" alt="Apetotix"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ajo Perejil</h5>
+      <p class="card-text">CIRCULACION, ANTIOXIDANTE, POTENTE</p>
+      <p class="card-text price">L.105.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 14 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 245px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGzBxCPfiqwQm-TDNtY.jpg" class="card-img-top" alt="Anti-Alergica"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Alfalfa</h5>
+      <p class="card-text">GASTRITIS, ANEMIA, COLICOS, HIGADO</p>
+      <p class="card-text price">L.102.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 15 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 245px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGzCDnZlP7jK-C7zPcR.jpg" class="card-img-top" alt="Anti-Alergica"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Alholva </h5>
+      <p class="card-text">REGULADOR DEL METABOLISMO, ADELGAZANTE</p>
+      <p class="card-text price">L.95.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 16 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGj6UvdIdb0wXtmfEKm.jpg" class="card-img-top" alt="Anti-Hongos"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ajenjovit</h5>
+      <p class="card-text">VIENTRE, ESTOMAGO</p><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 17 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules"> 2 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGk3g1gDqzH2ZAh8z2O.jpg" class="card-img-top" alt="Anti-Acne"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Aceite de Coco</h5>
+      <p class="card-text">BELLEZA</p><br>
+      <p class="card-text price">L.70.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 18 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjsYVUJVaqSDxlFEaL.jpg" class="card-img-top" alt="African Superman"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Alcachofa</h5>
+      <p class="card-text">HIGADO GRASO</p><br>
+      <p class="card-text price">L.150.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 19 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">4 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2TGRCPopJLoUOZ5y_.jpg" class="card-img-top" alt="Acai Berry"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Asmafin</h5>
+      <p class="card-text">ASMA, BRONQUITIS,ALERGIAS, RENITIS,TOS</p>
+      <p class="card-text price">L.68.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 20 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">8 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGj8YjY2nzEuhQxsOLZ.jpg" class="card-img-top" alt="Aloe Vera Nayal"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">ASMAFIN </h5>
+      <p class="card-text"> ASMA, BRONQUITIS,ALERGIAS, RENITIS,TOS</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 21 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">16 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjyKtqlSK3k9qkjKIx.jpg" class="card-img-top" alt="Biox Diabetes"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Asmafin</h5>
+      <p class="card-text">ASMA, BRONQUITIS,ALERGIAS, RENITIS,TOS</p>
+      <p class="card-text price">L.230.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 22 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">32 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MH2zRVCTzxy32PKGfiP.jpg" class="card-img-top" alt="Bucalvest"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Asmafin</h5>
+      <p class="card-text">ASMA, BRONQUITIS,ALERGIAS, RENITIS,TOS</p>
+      <p class="card-text price">L.360.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 23 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">8 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMU6kTJdpCv06l35xz.jpg" class="card-img-top" alt="Bacteridox"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Anti Alergico </h5>
+      <p class="card-text">ALERGIAS DE TODO TIPO</p><br>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 24 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">32 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjypL_HWSR7oQhO0Jw.jpg" class="card-img-top" alt="Black Ant King"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Antipetrus 32 ONZ</h5>
+      <p class="card-text">SACA CALCULOS BILIARES, RENALES, VEJIGA.</p>
+      <p class="card-text price">L.310.00</p>
+    </div>
+  </div> 
+</div>
+
+<!-- Producto 25 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 215px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHSpNoRgI3EWXqN9SP0.jpg" class="card-img-top" alt="SHARK CARTILAGE PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Boldo Vit </h5>
+      <p class="card-text">HIGADO, IMSOMNIO</p>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 26 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">30 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MH346U09SSFMHk0OvEq.jpg" class="card-img-top" alt="FOLIC ACID 800MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT- C 1,000MG 30 CAPS</h5>
+      <p class="card-text">ANTIOXIDANTE</p><br>
+      <p class="card-text price">L.139.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 27 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 196px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHTJKteh76m82mAxEjO.jpg" class="card-img-top" alt="MELATONINA 5MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Calaguala </h5>
+      <p class="card-text">ANTIOXIDANTE, ACIDO URICO, SANGRE</p>
+      <p class="card-text price">L.85.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 28 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 216px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGoHl5LXy07hGayDGVd.jpg" class="card-img-top" alt="COMPLETE B PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cancerina </h5>
+      <p class="card-text">PIEL, CANCER, INFECCIONES</p>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 29 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div><br><br>
+    <center><img style="width: 195px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHTTGG3GJMwxi9CAPcG.jpg" class="card-img-top" alt="SEA KELP PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cinnabon (Canela)</h5>
+      <p class="card-text">DIABETES</p><br>
+      <p class="card-text price">L.108.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 30 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKM7klUJMH6nIEkBkXv.jpg" class="card-img-top" alt="CO Q-10 100MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cascabel</h5>
+      <p class="card-text">PIEL, CANCER, INFECCIONES</p><br>
+      <p class="card-text price">L.210.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 31 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">2 ONZ</div>
+
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjvY5sWlaPDRYUYRyc.jpg" class="card-img-top" alt="VITAMIN D3 5000IU PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cataril</h5>
+      <p class="card-text">CATARATAS, TERRIGIONES, VISTA NUBLADA</p>
+      <p class="card-text price">L.92.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 32 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 230px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHY7bKcmXc_NqfRoKh0.jpg" class="card-img-top" alt="RESVERATROL 50MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cascara Sagrada</h5>
+      <p class="card-text">LAXANTE SUAVE</p><br>
+      <p class="card-text price">L.163.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 33 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 Caps</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYAiLPabOSC8VHzodv.jpg" class="card-img-top" alt="SPIRULINA 500MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Cirkuvit </h5>
+      <p class="card-text">CIRCULACION, ANTIOXIDANTE, POTENTE</p><br>
+      <p class="card-text price">L.170.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 34 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">16 ONZ</div>
+    <center><img style="width: 125px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2SdtwHlU0p7gUa_Vy.jpg" class="card-img-top" alt="APPLE CIDER VINEGAR"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Citostac 16 ONZ</h5>
+      <p class="card-text">TUMORES, QUISTES, MIOMAS, HERNIAS, CANCER</p><br>
+      <p class="card-text price">L.197.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 35 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">32 ONZ</div>
+    <center><img style="width: 127px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2S1UCXQ_WCBzXWFL0.jpg" class="card-img-top" alt="GINGER 550MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Citostac 32 ONZ</h5>
+      <p class="card-text">Fortalece el sistema inmune.
+        Puede utilizarlo para tumores malignos y benignos..</p>
+      <p class="card-text price">L.270.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 36 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYDeT8ek2EbTI_Di5z.jpg" class="card-img-top" alt="ZINC CHELATED 25MG P.P"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Clavo de Olor </h5>
+      <p class="card-text">DESPARACITANTE, DIGESTIVO, AFRODICIACO</p><br>
+      <p class="card-text price">L.105.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 37 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 210px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYFyPo_0CU1eucyQj0.jpg" class="card-img-top" alt="LUTEIN 20MG PURITANS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Colavit</h5>
+      <p class="card-text">DIURETICO, MEJORA HUESOS</p><br><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 38 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 190px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGzDagPoMLw9PvgiRaS.jpg" class="card-img-top" alt="Colon Healthy 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Colon Healthy</h5>
+      <p class="card-text">COLITIS, GASES, ESTREÑIMIENTO, HEMORROIDES</p><br>
+      <p class="card-text price">L.152.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 39 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 210px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYIoCNcL6QRXATAGz3.jpg" class="card-img-top" alt="Damianil 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Damianil</h5>
+      <p class="card-text">FORTALECE CEREBRO Y SISTEMA NERVIOSO, EPILEPCIA</p><br>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 40 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjj8Bx4F7HcQeetvqy.jpg" class="card-img-top" alt="Diabenil 1-2-3 90 Caps"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Diabenil 1-2-3 90 Caps</h5>
+      <p class="card-text">NIVELA AZUCAR EN LA ANGRE, RESTAURA PANCREAS</p>
+      <p class="card-text price">L.186.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 41 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 234px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjn_k_YFEUhG80v38W.jpg" class="card-img-top" alt="Esc. Liquidambar ozonizado 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Esc. Liquidambar ozonizado</h5>
+      <p class="card-text">ULCERAS GATRICAS Y EXTERNAS, LIMPIA OVARIOS, UTERO...</p>
+      <p class="card-text price">L.105.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 42 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 208px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYLErNShwbbLdPLCcE.jpg" class="card-img-top" alt="Equinavit (Equinacea) 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Equinavit (Equinacea) 60 CAPS</h5>
+      <p class="card-text">ANTIBIOTICO, ELEVA SIS.INMUNOLOGICO, ANTIALERGICO</p><br>
+      <p class="card-text price">L.153.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 43 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 247px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYNWIh-6DXiqlrWVe9.jpg" class="card-img-top" alt="Estreñisen 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Estreñisen</h5>
+      <p class="card-text">ESTREÑIMIENTO CRONICO, COLITIS, HEMORROIDES</p><br>
+      <p class="card-text price">L.153.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 44 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYThKdT6m056acoF8f.jpg" class="card-img-top" alt="Eufravit (Eufrasia) 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Eufravit (Eufrasia)</h5>
+      <p class="card-text">VISION</p><br><br>
+      <p class="card-text price">L.92.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 45 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYXN2Vd3V1ikaOsC50.jpg" class="card-img-top" alt="Feno Vit (Fenogreco) 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Feno Vit (Fenogreco)</h5>
+      <p class="card-text">ANTIBIOTICO, HEMORROIDES</p><br><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 46 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYeZR-9XxTYkq15zog.jpg" class="card-img-top" alt="Frangula Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Frangula Vit</h5>
+      <p class="card-text">ESTREÑIMIENTO CRONICO, COLITIS, HEMORROIDES</p><br>
+      <p class="card-text price">L.153.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 47 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 230px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeSizcbUoJWKBaVxwD.jpg" class="card-img-top" alt="Garcina Gamboya 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Garcina Gamboya</h5>
+      <p class="card-text">QUEMADOR DE GRASA, QUITA EL APETITO</p>
+      <p class="card-text price">L.210.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 48 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MHYgupfUE9LYZHhsydU.jpg" class="card-img-top" alt="Garlic Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Garlic Vit </h5>
+      <p class="card-text">DESINTOXICANTE, PRESION ALTA</p><br>
+      <p class="card-text price">L.92.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 49 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGp0SjsaB5HH3hvafyz.jpg" class="card-img-top" alt="Gastronol 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Gastronol </h5>
+      <p class="card-text">GASTRITIS, ULCERAS, ACIDEZ</p><br>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 50 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 223px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGp3pXqWjstOJyeyASR.jpg" class="card-img-top" alt="Ginseng + Ginkgo 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ginseng + Ginkgo </h5>
+      <p class="card-text">POTENCIA, OXIGENADOR</p>
+      <p class="card-text price">L.118.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 51 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGp8vGnpuaRsRfZYicO.jpg" class="card-img-top" alt="Ginkgo Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ginkgo Vit</h5>
+      <p class="card-text">OXIGENADOR CEREBRAL</p><br>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 52 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGp8vGnpuaRsRfZYicO.jpg" class="card-img-top" alt="Ginseng Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ginseng Vit</h5>
+      <p class="card-text">POTENCIA, ENERGIA</p><br>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 53 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGpBej6KBiGDmSo5J47.jpg" class="card-img-top" alt="Green Tea 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Green Tea</h5>
+      <p class="card-text">ANTIOXIDANTE, CANCER</p><br>
+      <p class="card-text price">L.110.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 54 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGpEYX38Qee8VSzV7EG.jpg" class="card-img-top" alt="Healthy Grip 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Healthy Grip </h5>
+      <p class="card-text">GRIPE, RESFRIADOS, FIEBRE</p><br>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 55 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">4 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKM9B9izmbyT0AAOGxY.jpg" class="card-img-top" alt="HERPENICOTIL 4 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HERPENICOTIL </h5>
+      <p class="card-text">HERPES, PSORIASIS, HONGOS, ETC.</p>
+      <p class="card-text price">L.92.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 56 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMAe2XV4smqfyID8L9.jpg" class="card-img-top" alt="HemorroidExting B.O."></center>
+    <div class="content-card-product">
+      <h5 class="card-title">HemorroidExting B.O.</h5>
+      <p class="card-text">SISTEMA DIGESTIVO, HEMORROIDES</p>
+      <p class="card-text price">L.225.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 57 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 215px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGpJ8LQy_TlFCTbpJ3M.jpg" class="card-img-top" alt="Luvus 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Luvus</h5>
+      <p class="card-text">PURIFICADOR DIGESTIVO</p><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 58 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2O_2kOTy0KXwTBZ2O.jpg" class="card-img-top" alt="LIVER COMPLEX 100 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">LIVER COMPLEX</h5>
+      <p class="card-text">HIGADO GRASO</p>
+      <p class="card-text price">L.225.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 59 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 215px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGtwJQ-nTd8pS6SzkLZ.jpg" class="card-img-top" alt="Maca 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Maca</h5>
+      <p class="card-text">POTENCIA SEXUAL, NERVIOS</p><br>
+      <p class="card-text price">L.188.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 60 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 195px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGtztp6gW2kiW-Luy8Q.jpg" class="card-img-top" alt="Moringa Olifera 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Moringa Olifera </h5>
+      <p class="card-text">HUESOS, DIABETES, ENERGIA, NUTRIENTE</p><br>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 61 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGu1dKMkUMsnDPi1AR1.jpg" class="card-img-top" alt="Muerda Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Muerda Vit</h5>
+      <p class="card-text">PRESION ARTERIAL, CORAZON</p><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 62 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGu3rxjEz4SbuuF5lzD.jpg" class="card-img-top" alt="Nervodatil 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Nervodatil </h5>
+      <p class="card-text">INSOMNIO, ESTRESS, SIST. NERVIOSO</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 63 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGuCpiAO2VCCmWMDxCN.jpg" class="card-img-top" alt="Noni 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Noni</h5>
+      <p class="card-text">SIS. INMUNOLOGICO, MEMORIA</p>
+      <p class="card-text price">L.110.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 64 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGuCpiAO2VCCmWMDxCN.jpg" class="card-img-top" alt="Nopal Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Nopal Vit</h5>
+      <p class="card-text">AZUCAR, PANCREAS</p><br>
+      <p class="card-text price">L.166.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 65 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 180px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeSizhCaHYGPofIOCk.jpg" class="card-img-top" alt="NOGAL BESANIC B. O. 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">NOGAL BESANIC B. O.</h5>
+      <p class="card-text">DESINTOXICANTE</p><br><br><br>
+      <p class="card-text price">L.175.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 66 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">100 CAPS</div>
+    <center><img style="width: 180px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMCeVKGyk-v5ntm7wl.jpg" class="card-img-top" alt="NUTRI-BALANCE B.O. 100 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">NUTRI-BALANCE B.O.</h5>
+      <p class="card-text">VITAMINAS, HORMONAL</p><br><br><br>
+      <p class="card-text price">L.280.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 67 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">2 ONZ</div>
+    <center><img style="width: 180px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NaIP0LjRXUnGv42cpfB.jpg" class="card-img-top" alt="OIDOX 2 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">OIDOX</h5>
+      <p class="card-text">INFLAMACION, INFECCION Y DOLOR</p>
+      <p class="card-text price">L.95.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 68 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 140px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-Nez30X1lTLdZk6cjYzE.jpg" class="card-img-top" alt="Ovaril 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Ovaril</h5>
+      <p class="card-text">LIMPIA MATRIZ, UTEROS</p>
+      <p class="card-text price">L.132.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 69 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjmHq9f93T0rpwd13A.jpg" class="card-img-top" alt="Pañiloya 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Pañiloya</h5>
+      <p class="card-text">ANTIBIOTICO NATURAL PARA INFECCIONES</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 70 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 215px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGum_l4xndVeqMsmi9K.jpg" class="card-img-top" alt="Passiflora 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Passiflora</h5>
+      <p class="card-text">INSOMNIO, SIST. INMUNOLOGICO</p><br>
+      <p class="card-text price">L.105.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 71 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGuo2pplfM5V00H1ffS.jpg" class="card-img-top" alt="Pau D´ Arco 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Pau D´ Arco </h5>
+      <p class="card-text">PIEL, CANCER, INFECCIONES</p><br>
+      <p class="card-text price">L.105.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 72 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeSizihM4SshKCiWnQ.jpg" class="card-img-top" alt="POLEN 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">POLEN</h5>
+      <p class="card-text">ENERGIZANTE, RESTAURADOR CELULAR</p>
+      <p class="card-text price">L.142.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 73 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGuqL6HpPXb9fK3ueNm.jpg" class="card-img-top" alt="Polvo de Uva 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Polvo de Uva</h5>
+      <p class="card-text">CIRCULACION, ANTIOXIDANTE, POTENTE</p>
+      <p class="card-text price">L.158.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 74 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 220px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGusTZ7f0yzZGjg7549.jpg" class="card-img-top" alt="Presoril 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Presoril</h5>
+      <p class="card-text">HIPERTENSIÓN, CIRCULACIÓN</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 75 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGuxHXtOf_YMQCani-M.jpg" class="card-img-top" alt="Prostaril 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Prostaril</h5>
+      <p class="card-text">DISINFLAMA, LIMPIA PRÓSTATA</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 76 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGy56KdU7iCuKBlwPr0.jpg" class="card-img-top" alt="Quiebra Piedra 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Quiebra Piedra</h5>
+      <p class="card-text">CÁLCULOS RENALES, DIURÉTICO</p>
+      <p class="card-text price">L.92.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 77 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGy5dj28RQkBYnVD0nd.jpg" class="card-img-top" alt="Quina Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Quina Vit</h5>
+      <p class="card-text">INFECCIONES, PIEL</p><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 78 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyEQOZtiTKOukxYH4e.jpg" class="card-img-top" alt="Riñovit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Riñovit</h5>
+      <p class="card-text">INFECCIONES DE LOS RIÑONES, DIURÉTICO</p>
+      <p class="card-text price">L.120.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 79 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyEn0IGXP0x9lrK0bM.jpg" class="card-img-top" alt="Sauce Blanco 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Sauce Blanco</h5>
+      <p class="card-text">ANALGÉSICO, ANTIINFLAMATORIO</p>
+      <p class="card-text price">L.85.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 80 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyEn0IGXP0x9lrK0bM.jpg" class="card-img-top" alt="Saw Palmetto 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Saw Palmetto</h5>
+      <p class="card-text">PROSTATITIS</p><br>
+      <p class="card-text price">L.220.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 81 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyF_6XDhPJIklGiNHP.jpg" class="card-img-top" alt="Sexi Forte Vegetal 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Sexi Forte Vegetal</h5>
+      <p class="card-text">ENERGIZANTE, IMPOTENCIA SEXUAL</p>
+      <p class="card-text price">L.215.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 82 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">2 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjlh7CuPdqptCMJAes.jpg" class="card-img-top" alt="Sinu-Tax 2 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Sinu-Tax</h5>
+      <p class="card-text">SINUSITIS</p><br>
+      <p class="card-text price">L.123.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 83 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 236px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyFzhr3RPFATcmTQ8_.jpg" class="card-img-top" alt="St. Jhon's 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">St. Jhon's</h5>
+      <p class="card-text">SISTEMA NERVIOSO</p><br>
+      <p class="card-text price">L.110.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 84 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMDmpxn8X7KrNqjvNF.jpg" class="card-img-top" alt="Stone Drains B.O. 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Stone Drains B.O.</h5>
+      <p class="card-text">CÁLCULOS EN LA VESÍCULA</p><br>
+      <p class="card-text price">L.170.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 85 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMFyeifstHZNsWtkF1.jpg" class="card-img-top" alt="Senos Sin Quistes B.O. 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Senos Sin Quistes B.O.</h5>
+      <p class="card-text">QUISTES</p><br>
+      <p class="card-text price">L.230.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 86 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyGjRQEIJ8wqWGZk84.jpg" class="card-img-top" alt="Tilo Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Tilo Vit</h5>
+      <p class="card-text">SISTEMA NERVIOSO</p><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 87 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">8 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKM2VtI9bMwP_gdqOas.jpg" class="card-img-top" alt="Tose-fin 8 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Tose-fin</h5>
+      <p class="card-text">TOS REBELDE, DOLOR DE GARGANTA</p>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 88 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 235px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyHEQSsnxiHReLbqEb.jpg" class="card-img-top" alt="Uña de Gato 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Uña de Gato</h5>
+      <p class="card-text">ARTRITIS, DIABETES</p><br>
+      <p class="card-text price">L.142.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 89 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">8 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKM4o1dhgPH8VyeQs9B.jpg" class="card-img-top" alt="Urovit 8 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Urovit</h5>
+      <p class="card-text">ÁCIDO ÚRICO, DIURÉTICO, DEPURATIVO</p>
+      <p class="card-text price">L.115.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 90 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 210px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyHgUSVjPO-hgLyu1r.jpg" class="card-img-top" alt="Yohimvit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Yohimvit </h5>
+      <p class="card-text">POTENCIA SEXUAL</p><br><br>
+      <p class="card-text price">L.164.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 91 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 210px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyIACNaDqBiLWWAKpm.jpg" class="card-img-top" alt="Valeriana 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Valeriana</h5>
+      <p class="card-text">NERVIOS, INSOMNIO</p><br><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 92 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGpP-sEOAr8LwAsfdRu.jpg" class="card-img-top" alt="Zarza Vit 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Zarza Vit</h5>
+      <p class="card-text">DESINTOXICANTE, DIABETES</p><br><br>
+      <p class="card-text price">L.81.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 93 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 210px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjmhdzS6gvKNV1ar8u.jpg" class="card-img-top" alt="Enyma de papaya 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Enyma de papaya</h5>
+      <p class="card-text">SISTEMA DIGESTIVO</p><br>
+      <br>
+      <p class="card-text price">L.134.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 94 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjs35O5tXDH1ypFYUd.jpg" class="card-img-top" alt="Curcuma (Turmeric) 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Curcuma (Turmeric)</h5>
+      <p class="card-text">ANTIOXIDANTE, SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.150.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 95 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 215px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGyLCpJufcc-5OOrBRJ.jpg" class="card-img-top" alt="Gotu Kola 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Gotu Kola</h5>
+      <p class="card-text">OXIGENADOR CEREBRAL</p><br><br>
+      <p class="card-text price">L.164.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 96 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeSizmlT_PDGCEmkKH.jpg" class="card-img-top" alt="RIGEN 800 B.O. 90 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">RIGEN 800 B.O.</h5>
+      <p class="card-text">ARTICULACIONES</p><br>
+      <p class="card-text price">L.260.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 97 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">32 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjkvrKgI9QGM4sFug8.jpg" class="card-img-top" alt="Urovit 32ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Urovit</h5>
+      <p class="card-text">ÁCIDO ÚRICO, DIURÉTICO, DEPURATIVO</p>
+      <p class="card-text price">L.395.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 98 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">2 ONZ</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MKMON_x0U2FzzL2GQRV.jpg" class="card-img-top" alt="Aceite de Oliva 2 ONZ"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Aceite de Oliva 2 ONZ</h5>
+      <p class="card-text">DIGESTIVO, ANTIOXIDANTE, COLESTEROL</p>
+      <p class="card-text price">L.65.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 99 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 CAPS</div>
+    <center><img style="width: 190px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-NG2Q2wzvOsTptOEJnBd.jpg" class="card-img-top" alt="Colageno Hidrolizado con Vitamina C B.O 90 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Colageno Hidrolizado con Vitamina C B.O</h5>
+      <p class="card-text">ELASTICIDAD DE LA PIEL</p>
+      <p class="card-text price">L.215.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 100 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjwDv4bPUx59Q34rNQ.jpg" class="card-img-top" alt="Carbon Activado 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Carbon Activado</h5>
+      <p class="card-text">DEPURATIVO, SISTEMA DIGESTIVO</p>
+      <p class="card-text price">L.130.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 101 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">90 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjjdCnTK3RTUaLaru6.jpg" class="card-img-top" alt="Milk Thistle (Cardo Mariano) 90 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Milk Thistle (Cardo Mariano)</h5>
+      <p class="card-text">HIGADO GRASO</p>
+      <p class="card-text price">L.288.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 102 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">60 CAPS</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjr9cMgTIP8bun043h.jpg" class="card-img-top" alt="Dandelion (Diente de León) 60 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Dandelion (Diente de León)</h5>
+      <p class="card-text">SALUD DEL HIGADO</p>
+      <p class="card-text price">L.130.00</p>
+    </div>
+  </div>
+</div>
+
+<!-- Producto 103 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div style="background-color: red;" class="capsules">Fuera de Stock</div>
+    <center><img style="width: 240px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjio6I8dTMqTmIKntA.jpg" class="card-img-top" alt="VIT- C 1000MG 100 CAPS"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">VIT- C 1000MG</h5>
+      <p class="card-text">ANTIOXIDANTE sistema inmune</p><br>
+      <p class="card-text price">L.0.00</p> <!-- Reemplaza con el precio correcto -->
+    </div>
+  </div>
+</div>
+
+<!-- Agrega aquí los productos restantes siguiendo el mismo formato -->
+
+<!-- Producto 104 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card card-product">
+    <div class="capsules">50 CAPS/ 50MG</div>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGjgb2qgwRFup4F8Woq.jpg" class="card-img-top" alt="Zinc 50MG /50 Caps"></center>
+    <div class="content-card-product">
+      <h5 class="card-title">Zinc</h5>
+      <p class="card-text">DEFICIENCIA SEXUAL, DEGENERACIÓN MUSCULAR</p><br>
+      <p class="card-text price">L.95.00</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  <!-- Icono de WhatsApp flotante -->
+  <a href="https://wa.me/12345678" target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
+    <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
+  </a>
+  
+
+<!-- Mensaje con animación y icono de persona usuario -->
+<div class="help-message">
+  <div class="user-icon">
+    <i class="fas fa-user"></i>
+  </div>
+  <div class="message">
+    <p>¿En qué podemos ayudarte?</p>
+  </div>
+</div>
+
+
+<a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
+  <img style="width: 33px;" src="../img/mensajero.png" alt="Messenger">
+</a>
+
+
+<script src="/js/app.js"></script>
+
+  <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
