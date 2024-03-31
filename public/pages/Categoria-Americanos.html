@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +19,6 @@
     .categoria-card:hover {
       transform: translateY(-5px);
     }
-
-
-    
   </style>
 </head>
 
@@ -35,7 +31,7 @@
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="../img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
+        <img src="../assets/img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,54 +65,71 @@
   </nav>
     
 
+<!-- Banner -->
+<section class="banner">
+  <div class="content-banner">
+    <style>
+      .banner {
+        background-image: url('../assets/img/Americanos\ Present.png');
+        height: 30rem; /* Altura del banner en dispositivos de pantalla grande */
+        background-size: cover;
+        background-position: center 35%; /* Mueve la imagen hacia abajo */
+      }
 
-			<!-- Banner -->
-      <section class="banner">
-        <div class="content-banner">
-                  <style>
+      .content-banner {
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 25rem 0;
+      }
+
+      .content-banner p {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      .content-banner h2 {
+        color: #fff;
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .content-banner a {
+        margin-top: 2rem;
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--primary-color);
+        display: inline-block;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        border-radius: 3rem;
+      }
+
+      /* Estilos para dispositivos móviles */
+      @media only screen and (max-width: 768px) {
         .banner {
-      background-image: url('../img/CATEGORIA\ DE\ PRODUCTOS.png');
-      height: 30rem;
-      background-size: cover;
-      background-position: center 35%; /* Mueve la imagen hacia abajo */
-  }
-  
+          height: 15rem; /* Reduce la altura del banner en dispositivos móviles */
+          background-position: center; /* Ajusta la posición de la imagen de fondo */
+        }
 
-  .content-banner {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 25rem 0;
-  }
-  
-  .content-banner p {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-  
-  .content-banner h2 {
-    color: #fff;
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  
-  .content-banner a {
-    margin-top: 2rem;
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--primary-color);
-    display: inline-block;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-  }
-  
-                  </style>
-        </div>
-      </section>
-      
+        .content-banner {
+          padding: 10rem 0; /* Ajusta el espaciado en dispositivos móviles */
+        }
+
+        .content-banner h2 {
+          font-size: 2.5rem; /* Reduce el tamaño del título en dispositivos móviles */
+        }
+
+        .content-banner p {
+          font-size: 1rem; /* Reduce el tamaño del texto en dispositivos móviles */
+        }
+      }
+    </style>
+  </div>
+</section>
+
 
 <style>
  
@@ -208,14 +221,12 @@
 
     <div class="container">
       <div class="row">
-     
-
-  
+       
   <!-- Producto 1 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Articalm 60 caps.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 200px;" src="../assets/img/Articalm 60 caps.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS</p>
@@ -228,7 +239,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 170px;" src="/imgAmericanos/Artricalm 15 caps.png" class="card-img-top" alt="Artricalm"></center>
+    <center><img style="width: 172px;" src="../assets/img/Artricalm 15 caps.png" class="card-img-top" alt="Artricalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -241,7 +252,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 165px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925421483.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 172px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925421483.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm Blister</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -254,7 +265,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Articalm 60 caps.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 174px;" src="../assets/img/Artricalm 15 caps.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm Blister</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -267,7 +278,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Articalm 60 caps.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 165px;" src="../assets/img/Artricalm 15 caps.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm Blister</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -280,7 +291,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Grande</div><br><br>
-    <center><img style="width: 165px; height: 220px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925430088.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 160px; height: 220px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925430088.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm Crema</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -293,7 +304,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div style="background-color: red;" class="capsules">Fuera de Stock</div><br><br>
-    <center><img style="width: 200px; height: 260px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925430088.png" class="card-img-top" alt="Articalm"></center>
+    <center><img style="width: 195px; height: 260px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925430088.png" class="card-img-top" alt="Articalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Artricalm Crema</h5>
       <p class="card-text">SISTEMA ÓSEO ARTICULACIONES, DOLOR Y ARTROSIS.</p>
@@ -309,7 +320,7 @@
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
     <center>
-      <img style="width: 125px; transform: scale(1.7);" src="/imgAmericanos/Anti-Alcohol Americanos.png" class="card-img-top" alt="Anti-Alcohol">
+      <img style="width: 120px; transform: scale(1.7);" src="../assets/img/Anti-Alcohol Americanos.png" class="card-img-top" alt="Anti-Alcohol">
     </center>
     <div class="content-card-product"><br><br>
       <h5 class="card-title">Anti-Alcohol</h5>
@@ -323,7 +334,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">40 ml</div><br><br>
-    <center><img style="width: 180px;  transform: scale(1.7); margin-top: -50px;" src="/imgAmericanos/ANTI ALCHOL GOTAS.png" class="card-img-top" alt="Anti-Alcohol"></center>
+    <center><img style="width: 180px;  transform: scale(1.7); margin-top: -50px;" src="../assets/img/ANTI ALCHOL GOTAS.png" class="card-img-top" alt="Anti-Alcohol"></center>
     <div class="content-card-product"><br>
       <h5 class="card-title">Anti-Alcohol Gotas</h5>
       <p class="card-text">ESTÁ INDICADO PARA LA ANSIEDAD A LA DEPENDENCIA POR ALCOHOLISMO.</p>
@@ -336,7 +347,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Intestinal.png" class="card-img-top" alt="Antibiotico Intestinal"></center>
+    <center><img style="width: 192px;" src="../assets/img/Intestinal.png" class="card-img-top" alt="Antibiotico Intestinal"></center>
     <div class="content-card-product"><br>
       <h5 class="card-title">Antibiotico Intestinal</h5>
       <p class="card-text">MALESTAR ESTOMACAL, REFLUJO GASTROINTESTINAL, DIARREA.</p>
@@ -349,7 +360,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">120 ml</div><br><br>
-    <center><img style="width: 160px;  transform: scale(1.4);" src="/imgAmericanos/A-Belx.png" class="card-img-top" alt="A-Belx"></center>
+    <center><img style="width: 160px;  transform: scale(1.4);" src="../assets/img/A-Belx.png" class="card-img-top" alt="A-Belx"></center>
     <div class="content-card-product"><br>
       <h5 class="card-title">A-Belx</h5>
       <p class="card-text">DESPARASITANTE PARA ADULTOS Y NIÑOS.</p>
@@ -362,7 +373,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 ml</div><br><br><br>
-    <center><img style="width: 210px; transform: scale(1.1);" src="/imgAmericanos/Az Forte.png" class="card-img-top" alt="Az-Forte"></center>
+    <center><img style="width: 210px; transform: scale(1.1);" src="../assets/img/Az Forte.png" class="card-img-top" alt="Az-Forte"></center>
     <div class="content-card-product">
       <h5 class="card-title">Az-Forte</h5>
       <p class="card-text">ANTIBIÓTICO PARA NIÑOS.</p>
@@ -375,7 +386,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 ml</div><br><br>
-    <center><img style="width: 190px;  transform: scale(1.1);" src="/imgAmericanos/APETITOX.png" class="card-img-top" alt="Apetotix"></center>
+    <center><img style="width: 190px;  transform: scale(1.1);" src="../assets/img/APETITOX.png" class="card-img-top" alt="Apetotix"></center>
     <div class="content-card-product">
       <h5 class="card-title">Apetotix</h5>
       <p class="card-text">ESTIMULANTE DEL APETITO.</p>
@@ -388,7 +399,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Grande</div><br><br>
-    <center><img style="width: 165px;  transform: scale(1.5);" src="/imgAmericanos/HTC.png" class="card-img-top" alt="Anti-Alergica"></center>
+    <center><img style="width: 165px;  transform: scale(1.5);" src="../assets/img/HTC.png" class="card-img-top" alt="Anti-Alergica"></center>
     <div class="content-card-product">
       <h5 class="card-title">Anti-Alergica Crema</h5>
       <p class="card-text">INDICADO PARA ALERGÍAS DE LA PIEL.</p>
@@ -401,7 +412,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Pequeña</div><br><br>
-    <center><img style="width: 165px;  transform: scale(1.5);" src="/imgAmericanos/HTC.png" class="card-img-top" alt="Anti-Alergica"></center>
+    <center><img style="width: 165px;  transform: scale(1.5);" src="../assets/img/HTC.png" class="card-img-top" alt="Anti-Alergica"></center>
 
     <div class="content-card-product">
       <h5 class="card-title">Anti-Alergica Crema</h5>
@@ -415,7 +426,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Grande</div><br><br>
-    <center><img style="width: 170px ; transform: scale(1.5);" src="/imgAmericanos/ANTI-HONGOS.png" class="card-img-top" alt="Anti-Hongos"></center>
+    <center><img style="width: 170px ; transform: scale(1.5);" src="../assets/img/ANTI-HONGOS.png" class="card-img-top" alt="Anti-Hongos"></center>
     <div class="content-card-product">
       <h5 class="card-title">Anti-Hongos Crema</h5>
       <p class="card-text">INDICADO PARA HONGOS EN LA PIEL, PIES, MANOS Y OTROS.</p>
@@ -428,7 +439,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Crema</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Anti-Acne grande.png" class="card-img-top" alt="Anti-Acne"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Anti-Acne"></center>
     <div class="content-card-product">
       <h5 class="card-title">Anti-Acne</h5>
       <p class="card-text">ACNÉ, ESPINILLAS, MANCHAS E IMPERFECCIONES DE LA PIEL.</p>
@@ -441,7 +452,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">8 tabletas</div>
-    <center><img style="width: 240px;" src="/imgAmericanos/African superman.jpeg" class="card-img-top" alt="African Superman"></center>
+    <center><img style="width: 240px;" src="../assets/img/African superman.jpeg" class="card-img-top" alt="African Superman"></center>
     <div class="content-card-product">
       <h5 class="card-title">African Superman</h5>
       <p class="card-text">POTENCIADOR SEXUAL INDICADO PARA DIABÉTICOS E HIPERTENSOS.</p>
@@ -467,7 +478,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">1 litro</div>
-    <center><img style="width: 230px;" src="/imgAmericanos/Aloe Vera Nayal.jpeg" class="card-img-top" alt="Aloe Vera Nayal"></center>
+    <center><img style="width: 230px;" src="../assets/img/Aloe Vera Nayal.jpeg" class="card-img-top" alt="Aloe Vera Nayal"></center>
     <div class="content-card-product">
       <h5 class="card-title">Aloe Vera Nayal</h5>
       <p class="card-text">REFLUJO INTESTINAL, ESTREÑIMIENTO, MALESTARES ESTOMACALES Y AYUDA EN LA FLORA INTESTINAL.</p>
@@ -493,7 +504,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">SPRAYER</div>
-    <center><img style="width: 200px;" src="/imgAmericanos/Bucalvest.jpeg" class="card-img-top" alt="Bucalvest"></center>
+    <center><img style="width: 200px;" src="../assets/img/Bucalvest.jpeg" class="card-img-top" alt="Bucalvest"></center>
     <div class="content-card-product">
       <h5 class="card-title">Bucalvest</h5>
       <p class="card-text">AFECCIONES DE LA BOCA, HERPES, POSTEMILLAS.</p>
@@ -506,7 +517,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">SPRAYER</div><br><br>
-    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWo5x23x1-fYPv7Q.jpg" class="card-img-top" alt="Bacteridox"></center>
+    <center><img style="width: 192px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWo5x23x1-fYPv7Q.jpg" class="card-img-top" alt="Bacteridox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Bacteridox</h5>
       <p class="card-text">DESINFECTANTE PARA BACTERIAS DEL SANITARIO.</p>
@@ -518,8 +529,8 @@
 <!-- Producto 24 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <div class="capsules">Tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Black Ant King.png" class="card-img-top" alt="Black Ant King"></center>
+    <div class="capsules">Tabletas</div>
+    <center><img style="width: 212px;" src="../assets/img/Black ant king.jpeg" class="card-img-top" alt="Black Ant King"></center>
     <div class="content-card-product">
       <h5 class="card-title">Black Ant King</h5>
       <p class="card-text">POTENCIADOR SEXUAL PARA LA MUJER.</p>
@@ -531,7 +542,7 @@
 <!-- Producto 25 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <center><img style="width: 200px;" src="/imgAmericanos/Blue Wizard.png" class="card-img-top" alt="Blue Wizard"></center>
+    <center><img style="width: 200px;" src="../assets/img/Blue Wizard.jpg" class="card-img-top" alt="Blue Wizard"></center>
     <div class="content-card-product">
       <h5 class="card-title">Blue Wizard</h5>
       <p class="card-text">AFRODICIACO FEMENINO, LIVIDO.</p>
@@ -543,8 +554,8 @@
 <!-- Producto 26 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <div class="capsules">30 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Bull 30 tabletas.png" class="card-img-top" alt="Bull"></center>
+    <div class="capsules">30 tabletas</div>
+    <center><img style="width: 187px;" src="../assets/img/Bull.jpeg" class="card-img-top" alt="Bull"></center>
     <div class="content-card-product">
       <h5 class="card-title">Bull</h5>
       <p class="card-text">POTENCIADOR SEXUAL INDICADO PARA DIABÉTICOS E HIPERTENSOS Y NORMAL.</p>
@@ -556,8 +567,8 @@
 <!-- Producto 27 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <div class="capsules">12 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Big Penis USA 6800 mg 12 tabs.png" class="card-img-top" alt="Big Penis USA 6800 mg"></center>
+    <div class="capsules">12 tabletas</div>
+    <center><img style="width: 225px;" src="../assets/img/Big Penis.jpeg" class="card-img-top" alt="Big Penis USA 6800 mg"></center>
     <div class="content-card-product">
       <h5 class="card-title">Big Penis USA 6800 mg</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -570,7 +581,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Ciflox 15 caps.png" class="card-img-top" alt="Ciflox"></center>
+    <center><img style="width: 180px;" src="../assets/img/ciflox-Americano 15 caps.jpeg" class="card-img-top" alt="Ciflox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Ciflox</h5>
       <p class="card-text">ANTIBIÓTICO.</p>
@@ -582,8 +593,8 @@
 <!-- Producto 29 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Ciflox 30 caps.png" class="card-img-top" alt="Ciflox"></center>
+    <div class="capsules">30 cápsulas</div>
+    <center><img style="width: 210px;" src="/public/assets/img/Ciflox.jpeg" class="card-img-top" alt="Ciflox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Ciflox</h5>
       <p class="card-text">ANTIBIÓTICO.</p>
@@ -596,7 +607,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Ciflox 60 caps.png" class="card-img-top" alt="Ciflox"></center>
+    <center><img style="width: 172px;" src="/public/assets/img/ciflox-Americano.jpeg" class="card-img-top" alt="Ciflox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Ciflox</h5>
       <p class="card-text">ANTIBIÓTICO.</p>
@@ -609,7 +620,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Jarabe 30ml</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Ciflox para niños 30 ml.png" class="card-img-top" alt="Ciflox para niños"></center>
+    <center><img style="width: 170px;" src="../assets/img/ciflox-Aemricano 250ml Jarabe.jpeg" class="card-img-top" alt="Ciflox para niños"></center>
     <div class="content-card-product">
       <h5 class="card-title">Ciflox para niños</h5>
       <p class="card-text">ANTIBIÓTICO PARA NIÑOS.</p>
@@ -622,7 +633,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Concentrix 60 caps.png" class="card-img-top" alt="Concentrix"></center>
+    <center><img style="width: 172px;" src="../assets/img/Concetrix.jpeg" class="card-img-top" alt="Concentrix"></center>
     <div class="content-card-product">
       <h5 class="card-title">Concentrix</h5>
       <p class="card-text">CONCENTRACION.</p>
@@ -634,8 +645,8 @@
 <!-- Producto 33 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <div class="capsules">Gotas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Conjuntivix.png" class="card-img-top" alt="Conjuntivix"></center>
+    <div class="capsules">Gotas</div>
+    <center><img style="width: 200px;  transform: scale(1.2);" src="../assets/img/Conjuntivix.jpeg" class="card-img-top" alt="Conjuntivix"></center>
     <div class="content-card-product">
       <h5 class="card-title">Conjuntivix</h5>
       <p class="card-text">CONJUNTIVITIS.</p>
@@ -648,7 +659,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">120 ml</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Cefalex 120 ml.png" class="card-img-top" alt="Cefalex"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWnnvCMRADJpfdSc.jpg" class="card-img-top" alt="Cefalex"></center>
     <div class="content-card-product">
       <h5 class="card-title">Cefalex</h5>
       <p class="card-text">ANTIBIÓTICO PARA NIÑOS.</p>
@@ -661,7 +672,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">90 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Colageno Natura 90 caps.png" class="card-img-top" alt="Colageno Natura"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmluFQCf20-Rfhj.jpg" class="card-img-top" alt="Colageno Natura"></center>
     <div class="content-card-product">
       <h5 class="card-title">Colageno Natura</h5>
       <p class="card-text">PIEL, CABELLO Y UÑAS.</p>
@@ -674,7 +685,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas Blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 15 caps.png" class="card-img-top" alt="Dolox"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWn0vXpMLymp2XJu.jpg" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -687,7 +698,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas Blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 30 caps.png" class="card-img-top" alt="Dolox"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925426122.png" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -700,7 +711,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas Blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 60 caps.png" class="card-img-top" alt="Dolox"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925424889.png" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -713,7 +724,8 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas bote</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 15 caps bote.png" class="card-img-top" alt="Dolox"></center>
+<div class="col-md-6 col-lg-4">
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWn0vXpMLymp2XJu.jpg" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -726,7 +738,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas bote</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 30 caps bote.png" class="card-img-top" alt="Dolox"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmnPadxZCmh6vtY.jpg" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -739,7 +751,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas bote</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox 60 caps bote.png" class="card-img-top" alt="Dolox"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWnnvCMRADJpfdSZ.jpg" class="card-img-top" alt="Dolox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA.</p>
@@ -752,7 +764,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">120 ml Jarabe</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox niños 120 ml.png" class="card-img-top" alt="Dolox niños"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmOfC3Jv4Pg9EaX.jpg" class="card-img-top" alt="Dolox niños"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox niños</h5>
       <p class="card-text">TODO TIPO DE DOLOR, FIEBRE, CEFALEA PARA NIÑOS.</p>
@@ -765,7 +777,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox Mujer 30 caps.png" class="card-img-top" alt="Dolox Mujer"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWn3nGM73KZALaoE.jpg" class="card-img-top" alt="Dolox Mujer"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox Mujer</h5>
       <p class="card-text">INDICADO PARA DOLORES MENSTRUALES.</p>
@@ -778,7 +790,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Grande</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolox Crema grande.png" class="card-img-top" alt="Dolox Crema"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWo-5owBvlQJ27tY.jpg" class="card-img-top" alt="Dolox Crema"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolox Crema</h5>
       <p class="card-text">TODO TIPO DE DOLOR.</p>
@@ -791,7 +803,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolo Acidez X 30 caps.png" class="card-img-top" alt="Dolo Acidez"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWoTHC1QwcE4hAXj.jpg" class="card-img-top" alt="Dolo Acidez"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolo Acidez X30</h5>
       <p class="card-text">DOLOR Y ACIDEZ ESTOMACAL.</p>
@@ -804,7 +816,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">36 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Drains The Oil 36 caps.png" class="card-img-top" alt="Drains The Oil"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3132909786.jpg" class="card-img-top" alt="Drains The Oil"></center>
     <div class="content-card-product">
       <h5 class="card-title">Drains The Oil</h5>
       <p class="card-text">REDUCTOR DE PESO ESPECIALMENTE EN EL AREA ABDOMINAL.</p>
@@ -817,7 +829,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Enzima Q 200 60 caps.png" class="card-img-top" alt="Enzima Q 200"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWnqE5wEvvKszAQm.jpg" class="card-img-top" alt="Enzima Q 200"></center>
     <div class="content-card-product">
       <h5 class="card-title">Enzima Q 200</h5>
       <p class="card-text">HIPERTENSION.</p>
@@ -830,7 +842,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">240 ml</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Estomax 240 ml.png" class="card-img-top" alt="Estomax"></center>
+    <center><img style="width: 200px;" src="../assets/img/Estomil Jarabe.jpeg" class="card-img-top" alt="Estomax"></center>
     <div class="content-card-product">
       <h5 class="card-title">Estomil Jarabe</h5>
       <p class="card-text">DOLORES ESTOMACALES.</p>
@@ -843,7 +855,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">4 tabletas x Blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Extenze x 4.png" class="card-img-top" alt="Extenze x 4"></center>
+    <center><img style="width: 200px;" src="../assets/img/Extensea x5.jpeg" class="card-img-top" alt="Extenze x 4"></center>
     <div class="content-card-product">
       <h5 class="card-title">Extenze x 4</h5>
       <p class="card-text">POTENCIADOR SEXUAL PARA HOMBRE.</p>
@@ -856,7 +868,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">5 tabletas x Blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Extenze x 5.png" class="card-img-top" alt="Extenze x 5"></center>
+    <center><img style="width: 200px;" src="../assets/img/Extensea x5.jpeg" class="card-img-top" alt="Extenze x 5"></center>
     <div class="content-card-product">
       <h5 class="card-title">Extenze x 5</h5>
       <p class="card-text">POTENCIADOR SEXUAL PARA HOMBRE.</p>
@@ -869,7 +881,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">120 ml</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/F-12 Antianemico 120 ml.png" class="card-img-top" alt="F-12 Antianemico"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="F-12 Antianemico"></center>
     <div class="content-card-product">
       <h5 class="card-title">F-12 Antianemico</h5>
       <p class="card-text">ANTIANÉMICO.</p>
@@ -882,7 +894,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">240 ml</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/F-12 Antianemico 240 ml.png" class="card-img-top" alt="F-12 Antianemico"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="F-12 Antianemico"></center>
     <div class="content-card-product">
       <h5 class="card-title">F-12 Antianemico</h5>
       <p class="card-text">ANTIANÉMICO.</p>
@@ -895,7 +907,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">120 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Flexicalm 120 caps.png" class="card-img-top" alt="Flexicalm"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-Mo4zZ5DM3IxQIlsUCaa.jpg" class="card-img-top" alt="Flexicalm"></center>
     <div class="content-card-product">
       <h5 class="card-title">Flexicalm</h5>
       <p class="card-text">GLUCOSAMINA, CONDROITIN, ARTICULACIONES, DESGASTE EN LAS ARTICULACIONES.</p>
@@ -908,7 +920,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Fruta Planta Verde 30 caps.png" class="card-img-top" alt="Fruta Planta Verde"></center>
+    <center><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_837261-MCO71327420339_082023-O.webp" class="card-img-top" alt="Fruta Planta Verde"></center>
     <div class="content-card-product">
       <h5 class="card-title">Fruta Planta Verde 400 MG</h5>
       <p class="card-text">ADELGAZANTE.</p>
@@ -921,7 +933,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">36 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Fatzorb Fat 36 caps.png" class="card-img-top" alt="Fatzorb Fat"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Fatzorb Fat"></center>
     <div class="content-card-product">
       <h5 class="card-title">Fatzorb Fat</h5>
       <p class="card-text">ADELGANZANTE.</p>
@@ -934,7 +946,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">-</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Germany Sex Drops.png" class="card-img-top" alt="Germany Sex Drops"></center>
+    <center><img style="width: 200px;" src="../assets/img/Germany Sex Drops.jpeg" class="card-img-top" alt="Germany Sex Drops"></center>
     <div class="content-card-product">
       <h5 class="card-title">Germany Sex Drops</h5>
       <p class="card-text">AFRODICIACO FEMENINO, LIVIDO.</p>
@@ -947,7 +959,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">20 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Gold Ant 20 tabs.png" class="card-img-top" alt="Gold Ant"></center>
+    <center><img style="width: 200px;" src="../assets/img/Gold Ant.jpeg" class="card-img-top" alt="Gold Ant"></center>
     <div class="content-card-product">
       <h5 class="card-title">Gold Ant 8800 MG</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -960,7 +972,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">12 sobres</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Gold Fly 12 sobres.png" class="card-img-top" alt="Gold Fly"></center>
+    <center><img style="width: 200px;" src="../assets/img/Gold Fly.jpeg" class="card-img-top" alt="Gold Fly"></center>
     <div class="content-card-product">
       <h5 class="card-title">Gold Fly</h5>
       <p class="card-text">AFRODICIACO FEMENINO, LIVIDO.</p>
@@ -973,7 +985,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">100 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Graviola Now 100 caps.png" class="card-img-top" alt="Graviola Now"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3913424882.jpg" class="card-img-top" alt="Graviola Now"></center>
     <div class="content-card-product">
       <h5 class="card-title">Graviola Now</h5>
       <p class="card-text">TRATAMIENTO DE CANCER, DIABETES, ANSIEDAD, ETC.</p>
@@ -986,7 +998,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">12 sobres</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Green Coffe 1000 12 sobres.png" class="card-img-top" alt="Green Coffe 1000"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3657240707.jpg" class="card-img-top" alt="Green Coffe 1000"></center>
     <div class="content-card-product">
       <h5 class="card-title">Green Coffe 1000</h5>
       <p class="card-text">ADELGAZANTE.</p>
@@ -999,7 +1011,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Capsulas Liquidas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/H-Pilryx Forte.png" class="card-img-top" alt="H-Pilryx Forte"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="H-Pilryx Forte"></center>
     <div class="content-card-product">
       <h5 class="card-title">H-Pilryx Forte</h5>
       <p class="card-text">BACTERIA HELICOBACTER.</p>
@@ -1011,7 +1023,7 @@
 <!-- Producto 62 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
-    <center><img style="width: 200px;" src="/imgAmericanos/HTC Crema.png" class="card-img-top" alt="HTC Crema"></center>
+    <center><img style="width: 200px;" src="../assets/img/HTC Hombre Crema.jpeg" class="card-img-top" alt="HTC Crema"></center>
     <div class="content-card-product">
       <h5 class="card-title">HTC Hombre Crema</h5>
       <p class="card-text">INFECCIONES, PICAZON, SECRECION.</p>
@@ -1024,7 +1036,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">CREMA PEQUEÑA</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/HTC Triple Accion.png" class="card-img-top" alt="HTC Triple Accion"></center>
+    <center><img style="width: 200px;" src="../assets/img/HTC Triple Accion.jpeg" class="card-img-top" alt="HTC Triple Accion"></center>
     <div class="content-card-product">
       <h5 class="card-title">HTC Triple Accion</h5>
       <p class="card-text">ANTIALERGICA, ANTIMICOTICA, ANTIBIOTICA.</p>
@@ -1037,7 +1049,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">GEL</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Lubrifresh Gel.png" class="card-img-top" alt="Lubrifresh"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Lubrifresh"></center>
     <div class="content-card-product">
       <h5 class="card-title">Lubrifresh</h5>
       <p class="card-text">LUBRICANTE.</p>
@@ -1050,7 +1062,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Jarabe</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Laxo Jarabe.png" class="card-img-top" alt="Laxo"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Laxo"></center>
     <div class="content-card-product">
       <h5 class="card-title">Laxo Instestinal</h5>
       <p class="card-text">MALESTARES ESTOMACALES. JARABE.</p>
@@ -1063,7 +1075,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">5 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Hercules Max Pawer 5 caps.png" class="card-img-top" alt="Hercules Max Pawer"></center>
+    <center><img style="width: 200px;" src="../assets/img/Hercules.jpeg" class="card-img-top" alt="Hercules Max Pawer"></center>
     <div class="content-card-product">
       <h5 class="card-title">Hercules Max Pawer</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1076,7 +1088,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Leon Flax Linaza 60 caps.png" class="card-img-top" alt="Leon Flax Linaza"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Leon Flax Linaza"></center>
     <div class="content-card-product">
       <h5 class="card-title">Leon Flax Linaza</h5>
       <p class="card-text">FIBRA DIESTIVA.</p>
@@ -1089,7 +1101,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">36 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Lipotrim Natural Slimming 36 caps.png" class="card-img-top" alt="Lipotrim Natural Slimming"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3921231807.jpg" class="card-img-top" alt="Lipotrim Natural Slimming"></center>
     <div class="content-card-product">
       <h5 class="card-title">Lipotrim Natural Slimming</h5>
       <p class="card-text">ADELGAZANTE.</p>
@@ -1102,7 +1114,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">18 OZ</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Moringa Flax Pineaple 18 oz.png" class="card-img-top" alt="Moringa Flax Pineaple"></center>
+    <center><img style="width: 200px;" src="https://leonflax.com/cdn/shop/products/prod-leonflax-moringflax_300x300.png?v=1508470992" class="card-img-top" alt="Moringa Flax Pineaple"></center>
     <div class="content-card-product">
       <h5 class="card-title">Moringa Flax Omega 369 Pineaple</h5>
       <p class="card-text">FIBRA DIGESTIVA.</p>
@@ -1115,7 +1127,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Memorix 60 caps.png" class="card-img-top" alt="Memorix"></center>
+    <center><img style="width: 200px;" src="../assets/img/Memorix.jpeg" class="card-img-top" alt="Memorix"></center>
     <div class="content-card-product">
       <h5 class="card-title">Memorix</h5>
       <p class="card-text">RECONSTITUYENTE DE LA MEMORIA Y OXIGENADOR CEREBRAL.</p>
@@ -1128,7 +1140,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Memorix 15 caps.png" class="card-img-top" alt="Memorix"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWn2yANaAD4DEQ9J.jpg" class="card-img-top" alt="Memorix"></center>
     <div class="content-card-product">
       <h5 class="card-title">Memorix</h5>
       <p class="card-text">RECONSTITUYENTE DE LA MEMORIA Y OXIGENADOR CEREBRAL.</p>
@@ -1141,7 +1153,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Fuera de Stock</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Meizi 30 caps.png" class="card-img-top" alt="Meizi"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Meizi"></center>
     <div class="content-card-product">
       <h5 class="card-title">Meizi 30 cápsulas</h5>
       <p class="card-text">REDUCTOR DE PESO.</p>
@@ -1154,7 +1166,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">5 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Man King 5 caps.png" class="card-img-top" alt="Man King"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Man King"></center>
     <div class="content-card-product">
       <h5 class="card-title">Man King</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1167,7 +1179,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 gramos</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Max Man Delay Cream 60 gr.png" class="card-img-top" alt="Max Man Delay Cream"></center>
+    <center><img style="width: 200px;" src="../assets/img/Max Man.jpeg" class="card-img-top" alt="Max Man Delay Cream"></center>
     <div class="content-card-product">
       <h5 class="card-title">Max Man Delay Cream</h5>
       <p class="card-text">RETARDANTE MASCULINO. CREMA 60 GRAMOS.</p>
@@ -1180,7 +1192,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">50 gramos</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Max Man Enlarging Gel 50 gr.png" class="card-img-top" alt="Max Man Enlarging Gel"></center>
+    <center><img style="width: 200px;" src="../assets/img/Max Man.jpeg" class="card-img-top" alt="Max Man Enlarging Gel"></center>
     <div class="content-card-product">
       <h5 class="card-title">Max Man Enlarging Gel</h5>
       <p class="card-text">AGRANDA EL AREA MASCULINA. GEL 50 GRAMOS.</p>
@@ -1193,7 +1205,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">30 gramos</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Max Man Oil 30 gr.png" class="card-img-top" alt="Max Man Oil"></center>
+    <center><img style="width: 200px;" src="https://image.made-in-china.com/2f0j00UeVbTBwJfHcI/Wholesale-Thickening-Maxman-Enlarge-Essential-Oil-30ml-Men-Sex-Aid-Essential-Oil-Erection-Enhance-Growth-Oil.webp" class="card-img-top" alt="Max Man Oil"></center>
     <div class="content-card-product">
       <h5 class="card-title">Max Man Oil</h5>
       <p class="card-text">POTENCIADOR SEXUAL. ACEITE 30 GRAMOS.</p>
@@ -1206,7 +1218,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">12 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Max Man 12 tabs.png" class="card-img-top" alt="Max Man"></center>
+    <center><img style="width: 200px;" src="https://i.linio.com/p/9ed9b8eedb39d03b4bdcced2b4c46eb5-product.jpg" class="card-img-top" alt="Max Man"></center>
     <div class="content-card-product">
       <h5 class="card-title">Max Man</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1219,7 +1231,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Gotas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Nebulex Gotas.png" class="card-img-top" alt="Nebulex"></center>
+    <center><img style="width: 200px;" src="../assets/img/Nebulex.jpeg" class="card-img-top" alt="Nebulex"></center>
     <div class="content-card-product">
       <h5 class="card-title">Nebulex</h5>
       <p class="card-text">NEBULIZADOR PARA EL SISTEMA RESPIRATORIO. GOTAS.</p>
@@ -1232,7 +1244,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/No Mas Gripe 15 caps.png" class="card-img-top" alt="No Mas Gripe"></center>
+    <center><img style="width: 200px;" src="../assets/img/No mas gripe.jpeg" class="card-img-top" alt="No Mas Gripe"></center>
     <div class="content-card-product">
       <h5 class="card-title">No Mas Gripe</h5>
       <p class="card-text">TRATAMIENTO UTILIZADO PARA COVID 19 U OTROS.</p>
@@ -1245,7 +1257,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">100 cápsulas blandas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Omega 3 2000 mg 100 caps.png" class="card-img-top" alt="Omega 3 2000 mg"></center>
+    <center><img style="width: 200px;" src="https://m.media-amazon.com/images/I/416Vu1mEMhL.jpg" class="card-img-top" alt="Omega 3 2000 mg"></center>
     <div class="content-card-product">
       <h5 class="card-title">Omega 3 2000 mg</h5>
       <p class="card-text">CONTROLAR EL COLESTEROL.</p>
@@ -1258,7 +1270,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">100 cápsulas blandas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Omega 369 2000 mg 100 caps.png" class="card-img-top" alt="Omega 369 2000 mg"></center>
+    <center><img style="width: 200px;" src="https://resources.claroshop.com/imagenes-sanborns-ii/1200/7502262360081.jpg" class="card-img-top" alt="Omega 369 2000 mg"></center>
     <div class="content-card-product">
       <h5 class="card-title">Omega 369 2000 mg</h5>
       <p class="card-text">TRIGLISERIDOS, COLESTEROL.</p>
@@ -1271,7 +1283,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Prosta Hercules 50 caps.png" class="card-img-top" alt="Prosta Hercules"></center>
+    <center><img style="width: 200px;" src="../assets/img/Prosta Hercules.jpeg" class="card-img-top" alt="Prosta Hercules"></center>
     <div class="content-card-product">
       <h5 class="card-title">Prosta Hercules</h5>
       <p class="card-text">POTENCIADOR SEXUAL PARA HOMBRE.</p>
@@ -1284,7 +1296,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">100 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Pancreatin 10X-200 mg 100 caps.png" class="card-img-top" alt="Pancreatin 10X-200 mg"></center>
+    <center><img style="width: 200px;" src="https://i5.walmartimages.com/seo/NOW-Supplements-Pancreatin-10X-200-mg-naturally-occurring-Protease-Protein-Digesting-Amylase-Carbohydrate-Lipase-Fat-Digesting-Enzymes-100-Count-Pack_fd10dcce-0db0-4712-a6d3-669471473064.1497dc3964989742319b85e186aa78c7.jpeg" class="card-img-top" alt="Pancreatin 10X-200 mg"></center>
     <div class="content-card-product">
       <h5 class="card-title">Pancreatin 10X-200 mg</h5>
       <p class="card-text">ENZIMA PANCREATICA, DIABETES.</p>
@@ -1297,7 +1309,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Rhino 60 caps.png" class="card-img-top" alt="Rhino"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWoUM_QdeT4_ZlPq.jpg" class="card-img-top" alt="Rhino"></center>
     <div class="content-card-product">
       <h5 class="card-title">Rhino</h5>
       <p class="card-text">POTENCIADOR SEXUAL PARA HOMBRE.</p>
@@ -1310,7 +1322,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">2 tabletas x blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Rhino Blister 2 caps x blister.png" class="card-img-top" alt="Rhino Blister"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmY3u76n1wqRXdA.jpg" class="card-img-top" alt="Rhino Blister"></center>
     <div class="content-card-product">
       <h5 class="card-title">Rhino Blister</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1323,7 +1335,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">2 cápsulas x blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Rhino 7 2 caps x blister.png" class="card-img-top" alt="Rhino 7"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWoFLrFQjLdgeAPR.jpg" class="card-img-top" alt="Rhino 7"></center>
     <div class="content-card-product">
       <h5 class="card-title">Rhino 7</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1336,7 +1348,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">2 cápsulas x blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Rhino 99 2 caps x blister.png" class="card-img-top" alt="Rhino 99"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmXhRj1bp5d7oJD.jpg" class="card-img-top" alt="Rhino 99"></center>
     <div class="content-card-product">
       <h5 class="card-title">Rhino 99</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1349,7 +1361,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">15 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Super Magnesio 15 caps.png" class="card-img-top" alt="Super Magnesio"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWo5x23x1-fYPv7N.jpg" class="card-img-top" alt="Super Magnesio"></center>
     <div class="content-card-product">
       <h5 class="card-title">Super Magnesio</h5>
       <p class="card-text">SISTEMA OSEO.</p>
@@ -1362,7 +1374,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Super Magnesio 60 caps.png" class="card-img-top" alt="Super Magnesio"></center>
+    <center><img style="width: 200px;" src="../assets/img/Super Magnesio 60 C.jpeg" class="card-img-top" alt="Super Magnesio"></center>
     <div class="content-card-product">
       <h5 class="card-title">Super Magnesio</h5>
       <p class="card-text">SISTEMA OSEO.</p>
@@ -1375,7 +1387,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">Fuera de Stock</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Slim Bio 30 caps.png" class="card-img-top" alt="Slim Bio"></center>
+    <center><img style="width: 200px;" src="https://d2j6dbq0eux0bg.cloudfront.net/images/51112176/3925421273.png" class="card-img-top" alt="Slim Bio"></center>
     <div class="content-card-product">
       <h5 class="card-title">Slim Bio</h5>
       <p class="card-text">REDUCTOR DE PESO.</p>
@@ -1388,7 +1400,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">-</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Sexy Lady Gel.png" class="card-img-top" alt="Sexy Lady"></center>
+    <center><img style="width: 200px;" src="../assets/img/Sexy Lady.jpeg" class="card-img-top" alt="Sexy Lady"></center>
     <div class="content-card-product">
       <h5 class="card-title">Sexy Lady</h5>
       <p class="card-text">LUBRICANTE VAGINAL AUMENTA EL LIVIDO DE LA MUJER.</p>
@@ -1401,7 +1413,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">2 cápsulas x blister</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Super Panther 2 caps x blister.png" class="card-img-top" alt="Super Panther"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Super Panther"></center>
     <div class="content-card-product">
       <h5 class="card-title">Super Panther</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1414,7 +1426,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Triple Oxigenador Cerebral 60 caps.png" class="card-img-top" alt="Triple Oxigenador Cerebral"></center>
+    <center><img style="width: 200px;" src="../assets/img/Triple Oxigenador Cerebral.jpeg" class="card-img-top" alt="Triple Oxigenador Cerebral"></center>
     <div class="content-card-product">
       <h5 class="card-title">Triple Oxigenador Cerebral</h5>
       <p class="card-text">OXIGENADOR CEREBRAL.</p>
@@ -1427,7 +1439,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">12 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Tiger's Prestigious Life 12 tabs.png" class="card-img-top" alt="Tiger's Prestigious Life"></center>
+    <center><img style="width: 200px;" src="../assets/img/Tigers Prestigious Life.jpeg" class="card-img-top" alt="Tiger's Prestigious Life"></center>
     <div class="content-card-product">
       <h5 class="card-title">Tiger's Prestigious Life</h5>
       <p class="card-text">POTENCIADOR SEXUAL</p>
@@ -1440,7 +1452,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">-</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Vaginox Crema.png" class="card-img-top" alt="Vaginox"></center>
+    <center><img style="width: 200px;" src="../assets/img/Vaginox.jpeg" class="card-img-top" alt="Vaginox"></center>
     <div class="content-card-product">
       <h5 class="card-title">Vaginox</h5>
       <p class="card-text">INFECCIONES VAGINALES PICAZÓN, SECRECIÓN, ARDOR.</p>
@@ -1453,7 +1465,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Venas y Arterias 60 caps.png" class="card-img-top" alt="Venas y Arterias"></center>
+    <center><img style="width: 200px;" src="../assets/img/Venas y Arterias.jpeg" class="card-img-top" alt="Venas y Arterias"></center>
     <div class="content-card-product">
       <h5 class="card-title">Venas y Arterias</h5>
       <p class="card-text">VENAS,ARTERIAS Y CIRCULACION.</p>
@@ -1466,7 +1478,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Vig Rx 60 tabs.png" class="card-img-top" alt="Vig Rx"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWmtOl7bTP2zmtn_.jpg" class="card-img-top" alt="Vig Rx"></center>
     <div class="content-card-product">
       <h5 class="card-title">Vig Rx</h5>
       <p class="card-text">POTENCIADOR SEXUAL INDICADO PARA DIABÉTICOS E HIPERTENSOS.</p>
@@ -1479,7 +1491,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">10 tabletas + 10 protectores prostaticos</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/V-9 10 tabs.png" class="card-img-top" alt="V-9"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="V-9"></center>
     <div class="content-card-product">
       <h5 class="card-title">V-9</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1492,7 +1504,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">18 tabletas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/V-8 Super Energy 18 tabs.png" class="card-img-top" alt="V-8 Super Energy"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="V-8 Super Energy"></center>
     <div class="content-card-product">
       <h5 class="card-title">V-8 Super Energy</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1505,7 +1517,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">1 cápsula</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/XXXplosion 1 cap.png" class="card-img-top" alt="XXXplosion"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWoARM-eElamwnV7.jpg" class="card-img-top" alt="XXXplosion"></center>
     <div class="content-card-product">
       <h5 class="card-title">XXXplosion</h5>
       <p class="card-text">POTENCIADOR SEXUAL.</p>
@@ -1518,7 +1530,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Zinc, Colageno y Selenium 60 caps.png" class="card-img-top" alt="Zinc, Colageno y Selenium"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Zinc, Colageno y Selenium"></center>
     <div class="content-card-product">
       <h5 class="card-title">Zinc, Colágeno y Selenium</h5>
       <p class="card-text">PIEL, CABELLO, UÑAS, SISTEMA ÓSEO, MINERALES.</p>
@@ -1531,7 +1543,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">-</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Gynefem Jabon Intimo 50g.png" class="card-img-top" alt="Gynefem Jabon Intimo"></center>
+    <center><img style="width: 200px;" src="../assets/img/Gynefem.jpeg" class="card-img-top" alt="Gynefem Jabon Intimo"></center>
     <div class="content-card-product">
       <h5 class="card-title">Gynefem Jabón Íntimo</h5>
       <p class="card-text">JABÓN ÍNTIMO PARA DAMAS.</p>
@@ -1544,7 +1556,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">100 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Nutribalance 100 caps.png" class="card-img-top" alt="Nutribalance"></center>
+    <center><img style="width: 200px;" src="data:image/jpeg;base64,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" class="card-img-top" alt="Nutribalance"></center>
     <div class="content-card-product">
       <h5 class="card-title">Nutribalance</h5>
       <p class="card-text">VITAMINAS, HORMONAL.</p>
@@ -1557,7 +1569,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Hemorroidextin 60 caps.png" class="card-img-top" alt="Hemorroidextin"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Hemorroidextin"></center>
     <div class="content-card-product">
       <h5 class="card-title">Hemorroidextin</h5>
       <p class="card-text">HEMORROIDES.</p>
@@ -1570,7 +1582,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Senos Sin Quistes 60 caps.png" class="card-img-top" alt="Senos Sin Quistes"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Senos Sin Quistes"></center>
     <div class="content-card-product">
       <h5 class="card-title">Senos Sin Quistes</h5>
       <p class="card-text">QUISTES.</p>
@@ -1583,7 +1595,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">10 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Dolo Acidez X 10 caps.png" class="card-img-top" alt="Dolo Acidez X 10"></center>
+    <center><img style="width: 200px;" src="https://cdn.quicksell.co/-MFC9kB56UGYBF720OtW/products/-MGeVWoTHC1QwcE4hAXj.jpg" class="card-img-top" alt="Dolo Acidez X 10"></center>
     <div class="content-card-product">
       <h5 class="card-title">Dolo Acidez X 10</h5>
       <p class="card-text">DOLOR Y ACIDEZ ESTOMACAL.</p>
@@ -1596,7 +1608,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">-</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/HTC Triple Accion 30 ml.png" class="card-img-top" alt="HTC Triple Accion"></center>
+    <center><img style="width: 200px;" src="../assets/img/HTC Triple Accion.jpeg" class="card-img-top" alt="HTC Triple Accion"></center>
     <div class="content-card-product">
       <h5 class="card-title">HTC Triple Acción</h5>
       <p class="card-text">ANTISEPTICA, ANTIMICOTICA, AFECCIONES EN LA PIEL.</p>
@@ -1609,7 +1621,7 @@
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
     <div class="capsules">60 cápsulas</div><br><br>
-    <center><img style="width: 200px;" src="/imgAmericanos/Stone Drain 60 caps.png" class="card-img-top" alt="Stone Drain"></center>
+    <center><img style="width: 200px;" src="../assets/img/iconfarma.png" class="card-img-top" alt="Stone Drain"></center>
     <div class="content-card-product">
       <h5 class="card-title">Stone Drain</h5>
       <p class="card-text">VESÍCULA.</p>
@@ -1622,33 +1634,29 @@
   </div>
 </div>
 
-  <!-- Icono de WhatsApp flotante -->
-  <a href="https://wa.me/12345678" target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
-    <img style="width: 37px;" src="../img/social.png" alt="WhatsApp">
-  </a>
-  
+ <!-- Icono de WhatsApp flotante -->
+ <a href="https://wa.me/12345678" target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
+  <img style="width: 37px;" src="../assets/img/social.png" alt="WhatsApp">
+</a>
 
 <!-- Mensaje con animación y icono de persona usuario -->
 <div class="help-message">
-  <div class="user-icon">
-    <i class="fas fa-user"></i>
-  </div>
-  <div class="message">
-    <p>¿En qué podemos ayudarte?</p>
-  </div>
+<div class="user-icon">
+  <i class="fas fa-user"></i>
+</div>
+<div class="message">
+  <p>¿En qué podemos ayudarte?</p>
+</div>
 </div>
 
-
 <a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
-  <img style="width: 33px;" src="../img/mensajero.png" alt="Messenger">
+<img style="width: 33px;" src="../assets/img/mensajero.png" alt="Messenger">
 </a>
 
-
 <script src="/js/app.js"></script>
-
-  <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
