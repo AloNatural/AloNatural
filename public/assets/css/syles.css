@@ -11,8 +11,8 @@ body {
   width: 100%;
   background-color: #2f3130; /* Verde más oscuro para el footer */
   color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: -20px;
   z-index: 999; /* Asegura que el footer esté por encima del contenido */
 }
 
@@ -41,11 +41,22 @@ body {
 .social-icons {
   margin-top: 10px;
 }
+
 .social-icons span {
   font-size: 19px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: white; /* Establece el fondo blanco */
+  border-radius: 50%; /* Hace que el borde sea redondeado */
+  display: inline-block; /* Asegura que el elemento tenga dimensiones para que el border-radius funcione */
+  width: 30px; /* Ajusta el ancho a tu preferencia */
+  height: 30px; /* Ajusta la altura a tu preferencia */
+  text-align: center; /* Centra el contenido */
+  line-height: 30px; /* Centra verticalmente el contenido */
+  color : black;
 }
+
+
 /* Estilos predeterminados para todos los tamaños de pantalla */
 .container-hero {
   background-color: #0ce43b;
