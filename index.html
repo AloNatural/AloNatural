@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,12 +63,12 @@
     border: none;
   }
 </style>
-  
+
 </head>
 <body>
   <!-- Container Hero -->
   <div class="container-hero">
-    <p class="hero-text">100% Natural</p> <!-- Modificación del mensaje de saludo -->
+    <p class="hero-text">100% Natural</p>
   </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
@@ -129,50 +128,73 @@
           <img  src="public/assets/img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
         </div>
       </div>
-    
     </div>
   </div>
 
-  <!-- Viñetas -->
-  <main class="main-content">
-    <section class="container container-features">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Envíos a Nivel Nacional</h5>
-              <p class="card-text">Ofrecemos envíos rápidos y seguros a todo el país.</p>
-            </div>
+<!-- Barra de búsqueda -->
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-12"> 
+      <div class="search-container">
+        <form action="/search" method="GET">
+          <div class="input-group">
+            <input type="text" class="form-control search-input" placeholder="Buscar productos..." aria-label="Buscar productos..." aria-describedby="button-addon2">
+            <button class="btn btn-primary search-button" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Productos de Calidad</h5>
-              <p class="card-text">Nuestros productos son 100% naturales y de la más alta calidad.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Los Mejores Precios</h5>
-              <p class="card-text">Tenemos precios competitivos para que ahorres en tus compras.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Atención Personalizada</h5>
-              <p class="card-text">Contamos con un equipo de atención al cliente disponible las 24 horas.</p>
-            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<!-- Viñetas -->
+<main class="main-content">
+  <section class="container container-features">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i style="font-size: 3rem;" class="fas fa-shipping-fast icon text-success mb-3"></i>
+            <h5 class="card-title">Envíos a Nivel Nacional</h5>
+            <p class="card-text">Ofrecemos envíos rápidos y seguros a todo el país.</p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i style="font-size: 3rem;" class="fas fa-star icon text-success mb-3"></i>
+            <h5 class="card-title">Productos de Calidad</h5>
+            <p class="card-text">Nuestros productos son 100% naturales y de la más alta calidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i style="font-size: 3rem;" class="fas fa-coins icon text-success mb-3"></i>
+            <h5 class="card-title">Los Mejores Precios</h5>
+            <p class="card-text">Tenemos precios competitivos para que ahorres en tus compras.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i style="font-size: 3rem;" class="fas fa-headset icon text-success mb-3"></i>
+            <h5 class="card-title">Atención Personalizada</h5>
+            <p class="card-text">Contamos con un equipo de atención al cliente disponible las 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<br><br>
 
+<br><br>
+
+<br><br>
 
 <!-- Contenedor del iframe de Facebook -->
 <div class="facebook-iframe-container">
@@ -206,7 +228,7 @@
       </div>
     </div>
   </div>
-
+<br>
   <!-- Footer -->
   <footer class="footer">
     <div class="container container-footer">
