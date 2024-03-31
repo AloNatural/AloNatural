@@ -13,6 +13,57 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-Q6E5NHz8H9+L5Trn0Z8QzFNY5dPpuC3vw4zW+9aivzMSf/DZJopnCKWt6mi1SR87" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 
+  <style>
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+
+<style>
+  /* Estilos personalizados */
+  .facebook-iframe-container {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .facebook-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
   
 </head>
 <body>
@@ -78,20 +129,83 @@
           <img  src="public/assets/img/CATEGORIA DE PRODUCTOS.png" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    
     </div>
   </div>
 
-	
+  <!-- Viñetas -->
+  <main class="main-content">
+    <section class="container container-features">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Envíos a Nivel Nacional</h5>
+              <p class="card-text">Ofrecemos envíos rápidos y seguros a todo el país.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Productos de Calidad</h5>
+              <p class="card-text">Nuestros productos son 100% naturales y de la más alta calidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Los Mejores Precios</h5>
+              <p class="card-text">Tenemos precios competitivos para que ahorres en tus compras.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Atención Personalizada</h5>
+              <p class="card-text">Contamos con un equipo de atención al cliente disponible las 24 horas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<!-- Contenedor del iframe de Facebook -->
+<div class="facebook-iframe-container">
+  <!-- Página de Facebook dentro de un iframe -->
+  <iframe class="facebook-iframe" src="https://www.facebook.com/alonaturalponce/posts/965273984062524/?locale=ms_MY&_rdr" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Agrega el SDK de Facebook para comentarios -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0"></script>
+
+   <!-- Contenido principal -->
+   <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image-container">
+          <img src="public/assets/img/imagen1.jpg" alt="Imagen 1">
+          <div class="overlay">
+            <h2>Texto de la imagen 1</h2>
+            <p>Información adicional sobre la imagen 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image-container">
+          <img src="public/assets/img/imagen2.jpg" alt="Imagen 2">
+          <div class="overlay">
+            <h2>Texto de la imagen 2</h2>
+            <p>Información adicional sobre la imagen 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -100,9 +214,9 @@
         <div class="contact-info">
           <p class="title-footer">Información de Contacto</p>
           <ul>
-            <li>Dirección: Barrio El Benque 7 calle, entre 7 y 8 calle S.O. San Pedro Sula, Cortés</li>
-            <li>Teléfono: 3226-2944 / 3268-4168 HN</li>
-            <li>Email: alonaturalhn@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i>  Dirección: Barrio El Benque 7 calle, entre 7 y 8 calle S.O. San Pedro Sula, Cortés</li>
+            <li style="margin-top: 5px;"><i class="fa-solid fa-phone"></i>   Teléfono: 3226-2944 / 3268-4168</li>
+            <li style="margin-top: 5px;"><i class="fa-solid fa-envelope"></i>      Email: alonaturalhn@gmail.com</li>
           </ul>
           <div class="social-icons">
             <span><i class="fab fa-facebook-f"></i></span>
@@ -120,7 +234,6 @@
             <li><a href="#">Políticas de Privacidad</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
             <li><a href="#">Contáctanos</a></li><br>
-
           </ul>
         </div>
         <div class="information">
@@ -131,59 +244,52 @@
             <li><a href="#">Políticas de Privacidad</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
             <li><a href="#">Contáctanos</a></li><br>
-
           </ul>
         </div>
         <div class="information">
           <p class="title-footer">Información</p>
           <ul>
-          
             <li><a href="#">Acerca de Nosotros</a></li>
             <li><a href="#">Información Delivery</a></li>
             <li><a href="#">Políticas de Privacidad</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
             <li><a href="#">Contáctanos</a></li><br>
-
           </ul>
         </div>
       </div>
-      
     </div>
-
-
   </footer>
 
-<!-- Icono de WhatsApp flotante -->
-<a href="https://wa.me/32684168?text=¡Hola!%20Estoy%20interesado%20en%20los%20productos%20de%20Alo%20Natural." target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
-  <img style="width: 34px;" src="public/assets/img/mensajero.png" alt="WhatsApp">
-</a>
+  <!-- Icono de WhatsApp flotante -->
+  <a href="https://wa.me/32684168?text=¡Hola!%20Estoy%20interesado%20en%20los%20productos%20de%20Alo%20Natural." target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
+    <img style="width: 34px;" src="public/assets/img/mensajero.png" alt="WhatsApp">
+  </a>
   
-<!-- Mensaje con animación y icono de persona usuario -->
-<div class="help-message">
-  <div class="user-icon">
-    <i class="fas fa-user"></i>
+  <!-- Mensaje con animación y icono de persona usuario -->
+  <div class="help-message">
+    <div class="user-icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="message">
+      <p>¿En qué podemos ayudarte?</p>
+    </div>
   </div>
-  <div class="message">
-    <p>¿En qué podemos ayudarte?</p>
-  </div>
-</div>
 
+  <a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
+    <img style="width: 31px;" src="public/assets/img/whatsapp .png" alt="Messenger">
+  </a>
 
-<a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
-  <img style="width: 31px;" src="public/assets/img/whatsapp .png" alt="Messenger">
-</a>
+  <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery (necesario para Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- jQuery (necesario para Bootstrap) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Popper.js (necesario para Bootstrap) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
 
-<!-- Popper.js (necesario para Bootstrap) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-
-<!-- JavaScript de Bootstrap -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
