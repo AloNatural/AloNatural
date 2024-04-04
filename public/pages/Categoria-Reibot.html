@@ -22,6 +22,16 @@
     }
 
   </style>
+
+  <!-- Coloca esto en el encabezado de tu documento HTML -->
+<style>
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Esto distribuirá las tarjetas de manera uniforme */
+  }
+</style>
+
 </head>
 
 <body>
@@ -207,8 +217,70 @@
     <div class="container">
       <div class="row">
      
+   <!-- Barra de búsqueda -->
+   <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-9"> 
+        <div class="search-container">
+          <input type="text" class="form-control search-input" placeholder="Buscar productos..." aria-label="Buscar productos..." id="searchInput">
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+    </div>
+  </div> 
 
-  
+  <script>
+// Función para mostrar los resultados de búsqueda
+function showResults(results) {
+    const productCards = document.querySelectorAll(".card-product");
+
+    // Ocultar todos los productos
+    productCards.forEach(card => {
+        card.style.display = "none";
+    });
+
+    if (results.length === 0) {
+        const searchResults = document.getElementById("searchResults");
+        searchResults.innerHTML = "<p>No se encontraron resultados.</p>";
+        return;
+    }
+
+    // Mostrar solo los productos que coinciden con los resultados de búsqueda
+    productCards.forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        if (results.includes(title)) {
+            card.style.display = "block";
+        }
+    });
+}
+
+// Función para buscar productos
+function searchProducts(query) {
+    query = query.toLowerCase();
+    const productNames = document.querySelectorAll(".card-title");
+    const results = Array.from(productNames)
+        .map(product => product.textContent.toLowerCase())
+        .filter(name => name.includes(query));
+    showResults(results);
+}
+
+// Obtener el campo de búsqueda
+const searchInput = document.getElementById("searchInput");
+
+// Agregar un evento de escucha para la entrada de texto
+searchInput.addEventListener("input", function(event) {
+    const query = event.target.value.trim();
+    searchProducts(query);
+});
+
+  </script>
+
+
+
+<!-- Contenedor de productos -->
+  <div class="row justify-content-center product-container">
+    <!-- Aquí van todas las tarjetas de producto -->
+ 
   <!-- Producto 1 -->
 <div class="col-md-6 col-lg-4">
   <div class="card card-product">
@@ -1573,6 +1645,9 @@
 </div>
 
   </div>
+</div>
+
+</div>
 </div>
 
  <!-- Icono de WhatsApp flotante -->
