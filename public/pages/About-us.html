@@ -16,44 +16,121 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
   <!-- JavaScript de JSPDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  
+  <!-- Estilos de Mapa -->
+  <style>
+    .map-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; /* Proporción 16:9 */
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .facebook-section {
+      background-color: #3b5998;
+      color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .facebook-section h2.section-title {
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .facebook-feed {
+      text-align: center;
+    }
+
+    .facebook-feed blockquote {
+      border: none;
+    }
+
+    .comment-section {
+      background-color: #e9ebee;
+      padding: 50px;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .comment-section h2.section-title {
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .instagram-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .instagram-section h2.section-title {
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .instagram-feed img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .instagram-feed img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <!-- Container Hero -->
   <div class="container-hero">
     <p class="hero-text">100% Natural</p>
   </div>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="../assets/img/iconfarma.png" alt="Icono de Farmacia" style="width: 24px; height: 24px; margin-right: 5px;">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="/index.html">
-              <i class="fas fa-home"></i> Inicio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/Categorias.html">
-              <i class="fas fa-shopping-bag"></i> Productos
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/contact-us.html">
-              <i class="fas fa-envelope"></i> Contactanos
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../pages/About-us.html">
-              <i class="fas fa-user"></i> Acerca de Nosotros
-            </a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">
+                  <i class="fas fa-home"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/Categorias.html">
+                  <i class="fas fa-shopping-bag"></i> Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/contact-us.html">
+                  <i class="fas fa-envelope"></i> Contactanos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/About-us.html">
+                  <i class="fas fa-user"></i> Acerca de Nosotros
+                </a>
+              </li>
         </ul>
       </div>
     </div>
@@ -61,199 +138,73 @@
 
   <!-- Contenido principal -->
   <div class="container mt-4">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active"></div>
-      </div>
+    <!-- Mapa de ubicación -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15378.589878176099!2d-88.03678902038773!3d15.503383260555882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarrio%20El%20Benque%207%20calle%2C%20entre%207%20y%208%20calle%20S.O.%20San%20Pedro%20Sula%2C%20Cort%C3%A9s!5e0!3m2!1ses-419!2shn!4v1711834766130!5m2!1ses-419!2shn"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- Espacio para el contenido adicional -->
+
+    <!-- Sección de Acerca de Nosotros -->
+    <section id="about-us" class="mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title">Sobre Nosotros</h2>
+          <p>Somos una farmacia comprometida con la salud y el bienestar de nuestros clientes. Nuestra misión es ofrecer productos naturales de la más alta calidad para mejorar la calidad de vida de las personas.</p>
+          <p>Con años de experiencia en el mercado, nos hemos ganado la confianza de nuestros clientes gracias a la efectividad y seguridad de nuestros productos.</p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">Nuestra Historia</h2>
+          <p>Desde nuestros inicios, nos hemos dedicado a promover un estilo de vida saludable a través de productos naturales y servicios personalizados. Fundada en el año XXXX por [nombre del fundador], Alo Natural ha crecido para convertirse en un referente en el sector de la salud natural en San Pedro Sula, Cortés.</p>
+          <p>Nuestro compromiso con la excelencia y la satisfacción del cliente nos impulsa a seguir mejorando y ofreciendo soluciones innovadoras para el bienestar de nuestros clientes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Facebook -->
+    <section id="facebook-feed" class="mt-5 facebook-section">
+      <h2 class="section-title">Facebook</h2>
+      <!-- Aquí puedes insertar el feed de tu página de Facebook -->
+      <div class="facebook-feed">
+        <div class="fb-page" data-href="https://www.facebook.com/TuPagina" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/TuPagina" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/TuPagina">Tu Pagina</a>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Comentarios -->
+    <section id="comment-section" class="comment-section">
+      <h2 class="section-title">Comentarios en tiempo real</h2>
+      <div class="comment-feed">
+        <!-- Aquí puedes insertar el código para comentarios en tiempo real -->
+      </div>
+    </section>
+
+    <!-- Sección de Instagram -->
+    <section id="instagram-section" class="instagram-section">
+      <h2 class="section-title">Instagram</h2>
+      <!-- Aquí puedes insertar el feed de tu cuenta de Instagram -->
+      <div class="instagram-feed">
+        <a data-fancybox="gallery" href="../assets/img/instagram-1.jpg"><img src="../assets/img/instagram-1.jpg" alt="Instagram 1"></a>
+        <a data-fancybox="gallery" href="../assets/img/instagram-2.jpg"><img src="../assets/img/instagram-2.jpg" alt="Instagram 2"></a>
+        <a data-fancybox="gallery" href="../assets/img/instagram-3.jpg"><img src="../assets/img/instagram-3.jpg" alt="Instagram 3"></a>
+        <a data-fancybox="gallery" href="../assets/img/instagram-4.jpg"><img src="../assets/img/instagram-4.jpg" alt="Instagram 4"></a>
+      </div>
+    </section>
   </div>
 
-  <!-- Sección de Redes Sociales y Formulario de Contacto -->
-  <section id="contacto" class="mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <!-- Redes Sociales -->
-          <div class="social-icons">
-            <p class="title-footer">Redes Sociales</p>
-            <div class="d-flex flex-wrap">
-              <a href="#" class="social-link me-3 mb-3"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-link me-3 mb-3"><i class="fab fa-whatsapp"></i></a>
-              <a href="#" class="social-link me-3 mb-3"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <!-- Formulario de Contacto -->
-          <div class="contact-form">
-            <p class="title-footer">¡Contáctanos!</p>
-            <form id="contactForm" method="post" action="">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-              </div>
-              <!-- Cambiamos el tipo de botón a "button" para prevenir el envío automático del formulario -->
-              <button type="button" class="btn btn-primary w-100" id="sendWhatsApp">Enviar Mensaje</button>
-            </form>
-            <br>
-            <!-- Información de contacto adicional -->
-            <div class="contact-info mt-3">
-              <p class="mb-1"><i class="fas fa-phone-alt me-2"></i>Teléfono: 3226-2944 / 3268-4168</p>
-              <p class="mb-1"><i class="fas fa-envelope me-2"></i>Email: alonaturalhn@gmail.com</p>
-              <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>Dirección: Barrio El Benque 7 calle, entre 7 y 8 avenida S.O. San Pedro Sula, Cortés</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .col-md-6 {
-      flex: 0 0 calc(50% - 40px);
-      max-width: calc(50% - 40px);
-      margin: 20px;
-    }
-    .col-lg-4 {
-      flex: 0 0 calc(25% - 40px);
-      max-width: calc(25% - 40px);
-    }
-    .card-product {
-      width: 100%;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(247, 246, 246, 0.1);
-      overflow: hidden;
-    }
-    .card-product img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-bottom: 1px solid #ddd;
-    }
-    .content-card-product {
-      padding: 20px;
-    }
-    .card-title {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    .card-text {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .price {
-      font-size: 16px;
-      font-weight: bold;
-      color: #007bff;
-    }
-  
-    /* Estilos para dispositivos Android */
-    @media only screen and (max-width: 767px) {
-      .col-md-6 {
-        flex: 0 0 calc(10% - 40px);
-        max-width: calc(10% - 40px);
-        margin: 20px;
-      }
-      .col-lg-4 {
-        flex: 0 0 60%;
-        max-width: 200%;
-      }
-    }
-  </style>
-  
-  <style>
-    /* Estilos para los iconos de redes sociales */
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      font-size: 24px;
-      color: #fff;
-      background-color: #007bff;
-      transition: transform 0.3s ease-in-out;
-      text-decoration: none; /* Quita el subrayado */
-    }
-  
-    .social-link:hover {
-      transform: scale(1.1);
-    }
-  
-    /* Estilos para el formulario de contacto */
-    .contact-form {
-      background-color: #f9f9f9;
-      padding: 30px;
-      border-radius: 10px;
-    }
-  
-    /* Ajustes para dispositivos móviles */
-    @media (max-width: 767px) {
-      .social-link {
-        margin-right: 10px;
-      }
-    }
-  </style>
-  
-  <script>
-    document.getElementById('sendWhatsApp').addEventListener('click', function() {
-      var nombre = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var mensaje = document.getElementById('message').value;
-  
-      // Formateamos el mensaje con los datos del formulario
-      var whatsappMessage = '¡Nuevo mensaje de contacto!%0A%0A' +
-                            '*Nombre:* ' + encodeURIComponent(nombre) + '%0A' +
-                            '*Correo Electrónico:* ' + encodeURIComponent(email) + '%0A' +
-                            '*Mensaje:* ' + encodeURIComponent(mensaje);
-  
-      // Número de WhatsApp al que se enviará el mensaje
-      var numeroWhatsapp = '97821211'; // Reemplaza con el número de WhatsApp deseado
-  
-      // Generamos el enlace para enviar el mensaje a WhatsApp
-      var whatsappLink = 'https://wa.me/' + numeroWhatsapp + '?text=' + whatsappMessage;
-  
-      // Creamos un elemento "a" invisible y simulamos el clic para abrir la ventana de WhatsApp
-      var linkElement = document.createElement('a');
-      linkElement.href = whatsappLink;
-      linkElement.style.display = 'none';
-      document.body.appendChild(linkElement);
-      linkElement.click();
-      document.body.removeChild(linkElement);
-    });
-  </script>
-  
-<br>
   <!-- Footer -->
   <footer class="footer">
     <div class="container container-footer">
       <div class="menu-footer">
-        <!-- Información de Contacto -->
         <div class="contact-info">
           <p class="title-footer">Información de Contacto</p>
           <ul>
-            <li><i class="fa-solid fa-location-dot"></i> Dirección: Barrio El Benque 7 calle, entre 7 y 8 avenida S.O. San Pedro Sula, Cortés</li>
-            <li style="margin-top: 5px;"><i class="fa-solid fa-phone"></i> Teléfono: 3226-2944 / 3268-4168</li>
-            <li style="margin-top: 5px;"><i class="fa-solid fa-envelope"></i> Email: alonaturalhn@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i>  Dirección: Barrio El Benque 7 calle, entre 7 y 8 avenida S.O. San Pedro Sula, Cortés</li>
+            <li style="margin-top: 5px;"><i class="fa-solid fa-phone"></i>   Teléfono: 3226-2944 / 3268-4168</li>
+            <li style="margin-top: 5px;"><i class="fa-solid fa-envelope"></i>      Email: alonaturalhn@gmail.com</li>
           </ul>
-          <!-- Redes Sociales -->
           <div class="social-icons">
             <span><i class="fab fa-facebook-f"></i></span>
             <span><i class="fab fa-whatsapp"></i></span>
@@ -263,7 +214,6 @@
             </div>
           </div>
         </div>
-        <!-- Información Adicional -->
         <div class="information">
           <p class="title-footer">Información</p>
           <ul>
@@ -273,7 +223,6 @@
             <li><a href="#">Contáctanos</a></li><br>
           </ul>
         </div>
-        <!-- Otras secciones -->
         <div class="information">
           <p class="title-footer">Redes sociales</p>
           <ul>
@@ -284,7 +233,6 @@
             <li><a href="#">Contáctanos</a></li><br>
           </ul>
         </div>
-        <!-- Otras secciones -->
         <div class="information">
           <p class="title-footer">Información</p>
           <ul>
@@ -303,27 +251,22 @@
   <a href="https://wa.me/32684168?text=¡Hola!%20Estoy%20interesado%20en%20los%20productos%20de%20Alo%20Natural." target="_blank" class="floating-icon" style="background-color: rgb(241, 241, 241); border-radius: 50%; padding: 6px;">
     <img style="width: 34px;" src="../assets/img/whatsapp .png" alt="WhatsApp">
   </a>
+  
+  <a href="https://m.me/tunumero" target="_blank" class="floating-icon" style="background-color: rgb(236, 238, 236); border-radius: 50%; padding: 8px; bottom: 90px;">
+    <img style="width: 31px;" src="../assets/img/mensajero.png" alt="Messenger">
+  </a>
 
-  <!-- Mensaje con animación y icono de persona usuario -->
-  <div class="help-message">
-    <div class="user-icon">
-      <i class="fas fa-user"></i>
-    </div>
-    <div class="message">
-      <p>¿En qué podemos ayudarte?</p>
-    </div>
-  </div>
-
-  <!-- Enlace a Bootstrap JS y jQuery -->
+  <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- jQuery (necesario para Bootstrap) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQuery para Instagram -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Popper.js (necesario para Bootstrap) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-  <!-- JavaScript de Bootstrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-  <!-- JavaScript personalizado -->
-  <script src="../assets/js/app.js"></script>
+  <!-- FancyBox para Instagram -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  
+  <script src="public/assets/js/app.js"></script>
+  
 </body>
 </html>
